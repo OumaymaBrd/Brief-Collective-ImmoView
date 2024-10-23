@@ -1,5 +1,5 @@
 
-/* hi oumayma */
+
 body {
     margin: 0;
     background-color: white;
@@ -32,68 +32,4 @@ nav {
 }
 
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    margin-right: 10%;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-}
-
-.immo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: auto;
-    color: white;
-}
-
-.immo-content {
-    max-width: 100%;
-}
-
-.immo h1 {
-    font-size: 3.5em;
-}
-
-.immo p {
-    font-size: 1.2em;
-}
-
-.immo-buttons {
-    margin-top: 20px;
-}
-
-.first-btn, .seconde-btn {
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin-right: 20px;
-    font-weight: bold;
-    margin-top: 10%;
-}
-
-.first-btn {
-    background-color: #ffffff;
-    color: #022E62;
-}
-.seconde-btn {
-    background-color: transparent;
-    color: white;
-    border: 1px solid white;
-}
-.accuille-image img{
-    max-width: 100%;
-    height: auto;
-}
 
