@@ -133,7 +133,15 @@ nav {
         transform: translateX(0);
     }
 }
-
+.notre-mission{
+    background-color: #022E62;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    }
+    .notre-mission h1{
+      color: white;
+    }
 
 
 
