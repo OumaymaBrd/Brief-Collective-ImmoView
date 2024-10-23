@@ -1,4 +1,3 @@
-/* hi oumayma */
 body {
     margin: 0;
     background-color: white;
@@ -26,8 +25,8 @@ nav {
 }
 
 .logo img {
-    width: 50%;
-    margin-right: 60%;
+    width: 40%;
+    margin-right: 90%;
 }
 
 
@@ -46,7 +45,7 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .immo{
@@ -59,14 +58,15 @@ nav {
 
 .immo-content {
     max-width: 100%;
+   
 }
 
 .immo h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
 }
 
 .immo p {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .immo-buttons {
@@ -79,7 +79,6 @@ nav {
     border-radius: 20px;
     margin-right: 20px;
     font-weight: bold;
-    margin-top: 10%;
 }
 
 .first-btn {
@@ -94,4 +93,82 @@ nav {
 .accuille-image img{
     max-width: 100%;
     height: auto;
+    padding-left: 3.1%;
 }
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #1a2a52;
+    padding: 70px 50px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    max-width: 400px;
+}
+
+.footer-logo img {
+    height: 50%;
+    width: 70%;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: -20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20%;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-links, .footer-contact {
+    max-width: 200px;
+}
+
+.footer-links h3, .footer-contact h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 30px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 30px 0;
+}
+
