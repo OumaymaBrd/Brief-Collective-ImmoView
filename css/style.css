@@ -1,3 +1,100 @@
-h1{
-    background-color: red;
+/* test hicham  */
+=======
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "Doppio One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+.accuille-h{
+  background-color: #022E62;
+    border: none;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 50%;
+    margin-right: 60%;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 10%;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.immo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: white;
+}
+
+.immo-content {
+    max-width: 50%;
+}
+
+.immo h1 {
+    font-size: 2.5em;
+}
+
+.immo p {
+    font-size: 1.2em;
+}
+
+.immo-buttons {
+    margin-top: 20px;
+}
+
+.first-btn, .seconde-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.first-btn {
+    background-color: #ffffff;
+    color: #022E62;
+}
+
+.seconde-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.accuille-image img {
+    max-width: 100%;
+    height: auto;
+}
+>>>>>>> b9b7c22fa687316f00a29668de8f31dc115b82a0
