@@ -1,3 +1,33 @@
-h1{
-    color:green
+#slide-1{
+    width: 97vw;
+    height: 90vh;
 }
+
+.container{
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+#slide-2{
+    width: 14vw;
+    margin-left: -1rem;
+}
+
+#slide-3{
+    width: 14vw;
+}
+
+#slide-4{
+    width: 14vw;
+}
+
+#slide-5{
+    width: 14vw;
+}
+
+#slide-6{
+    width: 14vw;
+}
+
