@@ -1,0 +1,20 @@
+.afichage_nom_email{
+    background-color: #D9D9D9;
+    width:30%;
+    height: 60px !important;
+    border-radius: 5px;
+    color:#192B6E;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+
+
+}
+.email_content{
+    position:relative;
+    bottom:15px;
+    left:15%;
+}
+.name_content{
+    position: relative;
+    left:10%;
+}
