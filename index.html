@@ -1,57 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImmoView</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Témoignages Inspirants</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 300px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #aacfff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #2c3e50;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6aaeff;
+}
+
+    </style>
 </head>
 <body>
-    <header class="accuille-h">
-        <nav>
-            <div class="logo">
-                <img src="images/logo 2 2.png" alt="ImmoView Logo">
+    <div class="container">
+        <h1>Témoignages Inspirants</h1>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="../images/image1.png" alt="Image 1">
+                <button>Afficher Historique</button>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Catalogue</a></li>
-                <li><a href="#">Détails</a></li>
-                <li><a href="#" class="Témoignages">Témoignages</a></li>
-            </ul>
-        </nav>
-        <section class="immo">
-            <div class="immo-content">
-                <h1>welcome to the  the world of ImmoView</h1>
-                <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu.</p>
-                <div class="immo-buttons">
-                    <a href="#search" class="first-btn">See more</a>
-                    <a href="#search" class="seconde-btn">Catalogue</a>
-                </div>
+            <div class="testimonial-card">
+                <img src="../images/image2.png" alt="Image 2">
+                <button>Afficher Historique</button>
             </div>
-            <div class="accuille-image"> 
-                <img src="images/dar 1.png">
+            <div class="testimonial-card">
+                <img src="../images/image3.png" alt="Image 3">
+                <button>Afficher Historique</button>
             </div>
-        </section>
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-
-    </footer>
+            <div class="testimonial-card">
+                <img src="../images/image21.png" alt="Image 4">
+                <button>Afficher Historique</button>
+            </div>
+            <div class="testimonial-card">
+                <img src="../images/image22.png" alt="Image 5">
+                <button>Afficher Historique</button>
+            </div>
+            <div class="testimonial-card">
+                <img src="../images/image23.png" alt="Image 6">
+                <button>Afficher Historique</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
