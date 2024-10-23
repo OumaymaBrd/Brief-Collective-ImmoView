@@ -96,6 +96,44 @@ nav {
     padding-left: 3.1%;
 }
 
+#carousel-ac{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+    gap: 10%;
+}
+
+.carousel-slide {
+    flex: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-33.33%);
+    }
+    66% {
+        transform: translateX(-66.66%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 
 
