@@ -25,7 +25,7 @@ nav {
 }
 
 .logo img {
-    width: 40%;
+    width: 50%;
     margin-right: 90%;
 }
 
@@ -45,7 +45,7 @@ nav {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .immo{
@@ -275,8 +275,8 @@ footer {
 }
 
 .social-icons a img {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
 }
 
 .footer-links, .footer-contact {
