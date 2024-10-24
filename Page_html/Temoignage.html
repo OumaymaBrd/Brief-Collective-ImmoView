@@ -6,28 +6,37 @@
     <title>Témoignages Inspirants</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../css/style_temoignage.css">
-    
+    <style>
+        /* Styles pour cacher le contenu */
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
     <div class="container">
         <h1>Témoignages Inspirants</h1>
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <img src="../images/image1.png" alt="Image 1">
-                <button id="Historique1">Afficher Historique</button>
+                <a href="Afficher_historique.html#dev1" id="Historique1">Afficher Historique</a>
             </div>
+            
             <div class="testimonial-card">
                 <img src="../images/image2.png" alt="Image 2">
-                <button>Afficher Historique</button>
+                <a href="Afficher_historique.html#dev2" id="Historique2">Afficher Historique</a>
+                <!-- <button>Afficher Historique</button> -->
             </div>
+
             <div class="testimonial-card">
                 <img src="../images/image3.png" alt="Image 3">
-                <button>Afficher Historique</button>
+                <a href="Afficher_historique.html#dev33" id="Historique3">Afficher Historique</a>
+                <!-- <button>Afficher Historique</button> -->
             </div>
             <div class="testimonial-card">
                 <img src="../images/image21.png" alt="Image 4">
-                <button>Afficher Historique</button>
+                <!-- <button>Afficher Historique</button> -->
+                <!-- <a href="Afficher_historique.html#dev33" id="Historique3">Afficher Historique</a> -->
             </div>
             <div class="testimonial-card">
                 <img src="../images/image22.png" alt="Image 5">
@@ -39,5 +48,37 @@
             </div>
         </div>
     </div>
+
+    <!-- Un conteneur vide où le contenu de la page Afficher_historique.html sera chargé -->
+    <div id="historique-container"></div>
+
+    <script>
+        // Récupérer le bouton et le conteneur
+        const button = document.getElementById('Historique1');
+        const container = document.getElementById('historique-container');
+        const bodyContent = document.querySelector('.container'); // Sélectionne le contenu à cacher (tout ce qui est dans container)
+    
+        // Ajouter un gestionnaire d'événement pour le bouton
+        button.addEventListener('click', function() {
+            // Masquer tout le contenu de la page (sauf le conteneur)
+            bodyContent.classList.add('hidden');
+
+            // Utiliser fetch pour charger le contenu de la page 'Afficher_historique.html'
+            fetch('Afficher_historique.html')
+                .then(response => response.text())
+                .then(data => {
+                    // Insérer le contenu dans le conteneur
+                    container.innerHTML = data;
+
+                    // Ne garder que le div avec l'ID 'dev1' chargé depuis Afficher_historique.html
+                    const divContent = container.querySelector('#dev1');
+                    container.innerHTML = ''; // On vide le conteneur
+                    container.appendChild(divContent); // On affiche uniquement le div `dev1`
+                })
+                .catch(error => {
+                    console.error('Erreur lors du chargement de la page :', error);
+                });
+        });
+    </script>
 </body>
 </html>
