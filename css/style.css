@@ -2,8 +2,9 @@ body {
     margin: 0;
     background-color: white;
 }
-.accuille-h{
-  background-color: #022E62;
+
+.accuille-h {
+    background-color: #022E62;
     border: none;
     padding: 0 50px;
 }
@@ -26,7 +27,6 @@ nav {
     margin-right: 90%;
 }
 
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -45,7 +45,14 @@ nav {
     font-size: 17px;
 }
 
-.immo{
+.nav-links a:hover {
+    color: black;
+    background-color: rgba(255, 3, 16, 0.628);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.immo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,7 +62,6 @@ nav {
 
 .immo-content {
     max-width: 100%;
-   
 }
 
 .immo h1 {
@@ -82,18 +88,29 @@ nav {
     background-color: #ffffff;
     color: #022E62;
 }
+
+.first-btn:hover {
+    background-color: #ddd; /* Change to desired hover color */
+}
+
 .seconde-btn {
     background-color: transparent;
     color: white;
     border: 1px solid white;
 }
-.accuille-image img{
+
+.seconde-btn:hover {
+    background-color: #ffffff;
+    color: #022E62;
+}
+
+.accuille-image img {
     max-width: 103%;
     height: auto;
     padding-left: 6.1%;
 }
 
-#carousel-ac{
+#carousel-ac {
     display: flex;
     overflow: hidden;
     width: 100%;
@@ -130,110 +147,122 @@ nav {
         transform: translateX(0);
     }
 }
-.notre-mission{
+
+.notre-mission {
     background-color: #022E62;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    }
-    .notre-mission h1{
-      color: white;
-    }
-    #paragraph-mission{
-        font-size: 40px;
-        text-align: center;
-        margin: 100px 50px;
-        padding: 0 50px;
-        color: black;
-    }
-    .services{
-        background-color: #022E62;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: center;
-        }
-        .services h1{
-          color: white;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 80px;
-            max-width: 1200px;
-        }
-        
-        .service-card {
-            background-color: #e5e5e5;
-            border-radius: 10px;
-            padding: 30% 2%;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-left: 10%;
-            margin: 10%;
-        }
-        
-        .icon-s{
-            margin-bottom: 85px;
-        }
-        
-        .icon-s img {
-            width: 50px;
-            height: 50px;
-        }
-        
-        .service-card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #000;
-        }
-        
-        .service-card p{
-            font-size: 1.2rem;
-            color: #333;
-            line-height: 1.5;
-        }
+}
 
-        .faq-section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .faq-section h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        
-        .faq-section p {
-            font-size: 16px;
-            margin-bottom: 30px;
-        }
-        
-        .faq {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-        
-        .de-f{
-            
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        
-        .de-f summary {
-            font-size: 20px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .de-f p {
-            margin: 10px 0 0;
-            padding-top: 10px;
-            border-top: 1px solid #eee;
-        }
-        
+.notre-mission h1 {
+    color: white;
+}
 
+#paragraph-mission {
+    font-size: 40px;
+    text-align: center;
+    margin: 100px 50px;
+    padding: 0 50px;
+    color: black;
+}
 
+.services {
+    background-color: #022E62;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.services h1 {
+    color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    max-width: 1200px;
+}
+
+.service-card {
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 30% 2%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10%;
+    margin: 10%;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.icon-s {
+    margin-bottom: 85px;
+}
+
+.icon-s img {
+    width: 50px;
+    height: 50px;
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.service-card p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.faq-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.faq-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.faq-section p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.faq {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.de-f {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.de-f summary {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.de-f summary:hover {
+    color: #FFD700; /* Change to desired hover color */
+}
+
+.de-f p {
+    margin: 10px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
 
 footer {
     background-color: #1a2a52;
@@ -272,6 +301,10 @@ footer {
     height: 18px;
 }
 
+.social-icons a:hover img {
+    filter: brightness(0.8); /* Darken icons on hover */
+}
+
 .footer-links, .footer-contact {
     max-width: 200px;
 }
@@ -297,8 +330,15 @@ footer {
     font-size: 14px;
 }
 
+.footer-links a:hover {
+    color: #FFD700; /* Change to desired hover color */
+}
+
 .footer-contact p {
     font-size: 14px;
     margin: 30px 0;
 }
 
+.footer-contact p:hover {
+    color: #FFD700; /* Change to desired hover color */
+}
