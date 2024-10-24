@@ -28,3 +28,6 @@
     
 
         // rediger le client vers la page de commentaire
+        document.querySelector('.share-btn').addEventListener('click', function() {
+            window.location.href = 'Commentaire.html';
+        });
