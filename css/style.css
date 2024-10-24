@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: white;
+    background-color: #ECF0F1;
 }
 
 .accuille-h {
@@ -90,7 +90,7 @@ nav {
 }
 
 .first-btn:hover {
-    background-color: #ddd; /* Change to desired hover color */
+    background-color: #a9eb10;
 }
 
 .seconde-btn {
@@ -100,7 +100,7 @@ nav {
 }
 
 .seconde-btn:hover {
-    background-color: #ffffff;
+    background-color: #a9eb10;
     color: #022E62;
 }
 
@@ -196,8 +196,9 @@ nav {
 }
 
 .service-card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+    background-color: #a4bbed;
 }
 
 .icon-s {
@@ -255,7 +256,7 @@ nav {
 }
 
 .de-f summary:hover {
-    color: #FFD700; /* Change to desired hover color */
+    color: #FFD700; 
 }
 
 .de-f p {
