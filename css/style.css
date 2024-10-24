@@ -3017,10 +3017,6 @@
 
 
 
-*{
-    border: 1px solid red;
-}
-
 #aslide-1{
     width: 97vw;
     height: 90vh;
@@ -3080,3 +3076,12 @@
     margin-top: -0.313em;
 }
 
+#aslide-2:hover{
+    opacity:50%;
+}
+
+.alorem{
+    font-size: medium;
+    text-align: justify;
+    margin-right: 0.313em;
+}
