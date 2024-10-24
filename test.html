@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5f0ff;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 50px;
+        }
+
+        .image-container {
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 600px;
+            padding: 20px;
+            background-color: #91BBFF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            align-self: flex-start;
+            margin: 10px 0 5px;
+            color: #000;
+            font-weight: bold;
+            font-family: 'Bree Serif';
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="file"], textarea {
+            width: 70%;
+            height: 43px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            margin-bottom: 20px;
+            outline: none;
+            font-size: 14px;
+            position: relative;
+            bottom: 35px;
+            left:48px;
+            font-family: 'Bree Serif';
+        }
+
+        textarea {
+            height: 205px;
+            resize: none;
+            position: relative;
+            left:60px;
+            
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #C0C0C0;
+            text-align: center;
+        }
+        textarea::placeholder {
+            color: #C0C0C0;
+            position: relative;
+            bottom:-80px;
+        }
+
+
+        button {
+            background-color: #8896C5;
+            color: black;
+            width: 200px;
+            height: 28px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Bree Serif';
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #6778B5;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="main-container" style="position: relative; right:100px;">
+       
+        <div class="image-container" style="position: relative; right:80px; top:200px; ">
+            <img src="assets/images/homme2.png" alt="Avatar">
+        </div>
+
+        <!-- Form Container -->
+        <div class="container">
+            <h2 style="font-family: 'Bree Serif'; font-size: 20px; font-weight: bold;">Merci de compléter le formulaire.</h2>
+            <form>
+                <label for="name">Full name:</label>
+                <input type="text" id="name" placeholder="Entrer Votre Nom">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Entrer Votre Email">
+
+                <label for="image">Inserer Image:</label>
+                <input type="file" id="image">
+
+                <label for="opinion">Votre opinion:</label>
+                <textarea id="opinion" placeholder="Entrer Votre Opinion"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
