@@ -26,3 +26,5 @@
                 });
         });
     
+
+        // rediger le client vers la page de commentaire

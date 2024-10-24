@@ -11,11 +11,7 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e5f0ff;
-        }
-
+       
         .main-container {
             display: flex;
             justify-content: center;
@@ -34,7 +30,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .container {
+        .ocontainer {
             width: 600px;
             padding: 20px;
             background-color: #91BBFF;
@@ -60,7 +56,6 @@
             color: #000;
             font-weight: bold;
             font-family: 'Bree Serif';
-            font-weight: bold;
             font-size: 20px;
         }
 
@@ -75,7 +70,7 @@
             font-size: 14px;
             position: relative;
             bottom: 35px;
-            left:48px;
+            left: 48px;
             font-family: 'Bree Serif';
         }
 
@@ -83,20 +78,19 @@
             height: 205px;
             resize: none;
             position: relative;
-            left:60px;
-            
+            left: 60px;
         }
 
         input::placeholder, textarea::placeholder {
             color: #C0C0C0;
             text-align: center;
         }
+
         textarea::placeholder {
             color: #C0C0C0;
             position: relative;
-            bottom:-80px;
+            bottom: -80px;
         }
-
 
         button {
             background-color: #8896C5;
@@ -116,35 +110,124 @@
         button:hover {
             background-color: #6778B5;
         }
+
+        /* Style pour les titres et paragraphes en dehors du formulaire */
+        h1, p {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            color: #000;
+        }
+
+        header {
+    width:  100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+.accuille-h {
+background-color: #022E62;
+border: none;
+padding: 0 50px;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+margin-left: 10%;
+margin-top: 20px;
+}
+
+.logo img {
+width: 50%;
+margin-right: 90%;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+margin-right: 10%;
+}
+
+.nav-links li {
+margin: 0 15px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: white;
+font-size: 17px;
+}
+
+
     </style>
 </head>
-<body>
-   
+<body style="overflow-x: hidden;">
+
+    <header class="accuille-h">
+        <nav>
+            <div class="logo">
+                <img src="../../assets/images/logo.png" alt="ImmoView Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">Détails</a></li>
+                <li><a href="#">Témoignages</a></li>
+            </ul>
+        </nav>
+        <section class="immo">
+           
+            <div class="accuille-image"> 
+                <img src="../../assets/images/callabo.png" width="380px" style="position: relative; left:440px;">
+            </div>
+
+            <div class="immo-content">
+                <h1  style="color:white;  font-family: 'Bree Serif'; font-size: 30px;">Bienvenue sur la page dédiée à vos avis sur notre service</h1>
+                <p  style="color:white;  font-family: 'Bree Serif';">Partagez votre opinion avec nous !</p>
+                
+                
+            </div>
+        </section>
+</header>
+
+
     <div class="main-container" style="position: relative; right:100px;">
-       
-        <div class="image-container" style="position: relative; right:80px; top:200px; ">
+        <div class="image-container" style="position: relative; right:80px; top:200px;">
             <img src="../../assets/images/homme2.png" alt="Avatar">
         </div>
 
         <!-- Form Container -->
-        <div class="container">
+        <div class="ocontainer">
             <h2 style="font-family: 'Bree Serif'; font-size: 20px; font-weight: bold;">Merci de compléter le formulaire.</h2>
             <form>
-                <label for="name">Full name:</label>
+                <label for="name">Nom complet :</label>
                 <input type="text" id="name" placeholder="Entrer Votre Nom">
 
-                <label for="email">Email:</label>
+                <label for="email">Email :</label>
                 <input type="email" id="email" placeholder="Entrer Votre Email">
 
-                <label for="image">Inserer Image:</label>
+                <label for="image">Insérer Image :</label>
                 <input type="file" id="image">
 
-                <label for="opinion">Votre opinion:</label>
+                <label for="opinion">Votre opinion :</label>
                 <textarea id="opinion" placeholder="Entrer Votre Opinion"></textarea>
 
                 <button type="submit">Envoyer</button>
             </form>
         </div>
     </div>
+
 </body>
 </html>
