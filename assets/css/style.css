@@ -3017,6 +3017,11 @@
 
 
 
+*{
+    border:1px solid red;
+    font-family: sans-serif;
+}
+
 #aslide-1{
     width: 97vw;
     height: 90vh;
@@ -3120,15 +3125,9 @@ a h1{
     color:green;
 }
 
-.abiens a h3{
-    color: #908D8D;
-}
-
 /* code à enlever */
 hr{
     border:10px solid black;
 }
-
-
 
 
