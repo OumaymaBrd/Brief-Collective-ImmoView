@@ -6,14 +6,84 @@
     <title>Témoignages Inspirants</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../../assets/css/style_temoignage.css">
+    <script src="../../assets/js/action.js"></script>
     <style>
         /* Styles pour cacher le contenu */
         .hidden {
             display: none;
         }
+
+        header {
+    width:  100vw;
+    height: 100vh;
+    background-color: #ECF0F1;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+        .accuille-h {
+background-color: #022E62;
+border: none;
+padding: 0 50px;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+margin-left: 10%;
+margin-top: 20px;
+}
+
+.logo img {
+width: 50%;
+margin-right: 90%;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+margin-right: 10%;
+}
+
+.nav-links li {
+margin: 0 15px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: white;
+font-size: 17px;
+}
+
     </style>
 </head>
-<body>
+
+
+<body style="overflow-x: hidden;">
+    <header class="accuille-h">
+        <nav>
+            <div class="logo">
+                <img src="../../assets/images/logo 2 4.png" alt="ImmoView Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">Détails</a></li>
+                <li><a href="#">Témoignages</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+    
     <div class="container">
         <h1>Témoignages Inspirants</h1>
         <div class="testimonials-grid">
@@ -80,5 +150,11 @@
     <div id="historique-container"></div>
 
     <script src="../../assets/js/action.js"></script>
+    <script >
+        document.querySelector('.share-btn').addEventListener('click', function() {
+       window.location.href = 'Commentaire.html';
+   });
+   </script>
+
 </body>
 </html>
