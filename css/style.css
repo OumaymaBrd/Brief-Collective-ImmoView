@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/hicham
 body {
     margin: 0;
     background-color: white;
@@ -28,8 +31,282 @@ nav {
 
 .logo img {
     width: 50%;
-    margin-right: 60%;
+    margin-right: 90%;
 }
 
 
 
+<<<<<<< HEAD
+=======
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.immo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    color: white;
+}
+
+.immo-content {
+    max-width: 100%;
+   
+}
+
+.immo h1 {
+    font-size: 2.5em;
+}
+
+.immo p {
+    font-size: 1.3em;
+}
+
+.immo-buttons {
+    margin-top: 20px;
+}
+
+.first-btn, .seconde-btn {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.first-btn {
+    background-color: #ffffff;
+    color: #022E62;
+}
+.seconde-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.accuille-image img{
+    max-width: 100%;
+    height: auto;
+    padding-left: 3.1%;
+}
+
+#carousel-ac{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+    gap: 10%;
+}
+
+.carousel-slide {
+    flex: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-33.33%);
+    }
+    66% {
+        transform: translateX(-66.66%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.notre-mission{
+    background-color: #022E62;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    }
+    .notre-mission h1{
+      color: white;
+    }
+    #paragraph-mission{
+        font-size: 40px;
+        text-align: center;
+        margin: 100px 50px;
+        padding: 0 50px;
+        color: black;
+    }
+    .services{
+        background-color: #022E62;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        }
+        .services h1{
+          color: white;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 80px;
+            max-width: 1200px;
+        }
+        
+        .service-card {
+            background-color: #e5e5e5;
+            border-radius: 10px;
+            padding: 30% 2%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 10%;
+            margin: 10%;
+        }
+        
+        .icon-s{
+            margin-bottom: 85px;
+        }
+        
+        .icon-s img {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .service-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        
+        .service-card p{
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .faq-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .faq-section h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .faq-section p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .faq {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .de-f{
+            
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .de-f summary {
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .de-f p {
+            margin: 10px 0 0;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+        }
+        
+
+
+
+
+
+
+
+footer {
+    background-color: #1a2a52;
+    padding: 70px 50px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    max-width: 400px;
+}
+
+.footer-logo img {
+    height: 50%;
+    width: 70%;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: -20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20%;
+}
+
+.social-icons a img {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-links, .footer-contact {
+    max-width: 200px;
+}
+
+.footer-links h3, .footer-contact h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 30px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 30px 0;
+}
+
+>>>>>>> origin/hicham
