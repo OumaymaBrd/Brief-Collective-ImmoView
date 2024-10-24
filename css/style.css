@@ -3054,6 +3054,29 @@
     width: 14vw;
 }
 
-.aslide-nav{
+.aslide-nav-for{
     margin-top: 2.1em;
 }
+
+.aslide-nav-back{
+    margin-top: 2.1em;
+}
+
+.amynav {
+    margin: -0.625em -0.625em -0.625em -0.625em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #021B43;
+}
+
+.atitle{
+    margin-top: 1.5em;
+}
+
+.asubtitle{
+    color:#908D8D;
+    font-weight: lighter;
+    margin-top: -0.313em;
+}
+
