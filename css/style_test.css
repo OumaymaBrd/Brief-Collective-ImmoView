@@ -33,20 +33,27 @@
 }
 
 .share-btn {
-    background-color: #F0F1FE;
-    color: #2e3192;
+    background-color: #BAC2E0;
+    color: black;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1em;
     cursor: pointer;
+    position: relative;
+    left: 40% !important;
 }
 
 .welcome-text {
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 40px;
-    color: #333;
+    color: #5A6CAE;
+    position: relative;
+    right:140px;
+    bottom:150px;
+    font-family: 'Bree Serif';
+    font-size: 30px;
 }
 
 .testimonials {
@@ -125,3 +132,7 @@
     left:80px;
 }
 
+.contenue_welcome{
+    position: relative;
+    right:305px;
+}
