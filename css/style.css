@@ -5,7 +5,7 @@ body {
 .accuille-h{
   background-color: #022E62;
     border: none;
-    padding: 10px 20px;
+    padding: 0 50px;
 }
 
 nav {
@@ -59,11 +59,11 @@ nav {
 }
 
 .immo h1 {
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .immo p {
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
 .immo-buttons {
@@ -88,9 +88,9 @@ nav {
     border: 1px solid white;
 }
 .accuille-image img{
-    max-width: 100%;
+    max-width: 103%;
     height: auto;
-    padding-left: 3.1%;
+    padding-left: 6.1%;
 }
 
 #carousel-ac{
@@ -232,10 +232,6 @@ nav {
             border-top: 1px solid #eee;
         }
         
-
-
-
-
 
 
 
