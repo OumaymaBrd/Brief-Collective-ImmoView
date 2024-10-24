@@ -1,8 +1,11 @@
 body {
     margin: 0;
     background-color: #ECF0F1;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
-
 .accuille-h {
     background-color: #022E62;
     border: none;
