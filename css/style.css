@@ -149,6 +149,15 @@ nav {
         padding: 0 50px;
         color: black;
     }
+    .services{
+        background-color: #022E62;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        }
+        .services h1{
+          color: white;
+        }
 
 
 
