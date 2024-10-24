@@ -3017,6 +3017,11 @@
 
 
 
+*{
+    border:1px solid red;
+    font-family: sans-serif;
+}
+
 #aslide-1{
     width: 97vw;
     height: 90vh;
@@ -3066,6 +3071,10 @@
     background-color: #021B43;
 }
 
+.amyfoot {
+    margin: -0.625em -0.625em -0.625em -0.625em;
+}
+
 .atitle{
     margin-top: 1.5em;
 }
@@ -3085,3 +3094,39 @@
     text-align: justify;
     margin-right: 0.313em;
 }
+
+#aibiza{
+    width:20vw;
+}
+
+#abouskoura{
+    width:20vw;
+}
+
+#alos-angeles{
+    width:20vw;
+}
+
+.abiens{
+    display:grid;
+}
+
+.abiens a{
+    text-decoration: none;
+    color: #000;
+}
+
+#aibiza{
+    width: 50vw;
+
+}
+
+a h1{
+    color:green;
+}
+
+/* code à enlever */
+hr{
+    border:10px solid black;
+}
+
