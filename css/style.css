@@ -1757,23 +1757,50 @@ select option {
     color: white;
     text-align: center;
     font-style:normal;
-    /* font-size: ; */
+    
+}
+    
+
+.store{
+
+    /* position: fixed; */
+   
+   width: 100vw;
+   height: 20vh;
+   background-color: #ffffff;
+   position: relative;
+   right:67px;
+   overflow-x: hidden;
+   
+}
+
+.button-container{
+    position: relative;
+    bottom: 100px;
+   
+
+    
     
 }
 
-
-.search-container {
-    background-color: #071526;
-    padding: 46px;
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    display: flex;
-    gap: 51px;
-    max-width: 1055px;
-    margin: 220px auto;
+.store-buttons{
+   display: flex;
+   gap: 230px;
 }
 
+/* .store {
+    margin-left: 0;
+    margin-right: 902;
+    width: 100rem;
+    height: 7rem;
+    background: #a01111;
+} */
 
+/* #rectangle{
+    width:100%;
+    height:100%;
+    background:blue;
+} */
 
 
 
