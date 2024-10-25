@@ -1,6 +1,6 @@
 .obody {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #ffff;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,7 +13,11 @@
 
 .ocontainer {
     text-align: center;
-    padding: 20px;
+    /* padding: 20px; */
+}
+
+#container33{
+    font-size: 12px;
 }
 
 h1 {
@@ -260,28 +264,6 @@ footer {
 /* Media Queries pour mobile et tablette paysage */
 
 /* Mobile : De 768px à 1023px */
-@media (max-width: 1023px) {
-    .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-    }
-
-    .odiv1 {
-        left: 20px; /* Ajustement de la position */
-    }
-
-    h1 {
-        font-size: 28px; /* Réduction de la taille du titre */
-    }
-
-    .nav-links {
-        flex-direction: column; /* Disposition verticale pour la navigation */
-        align-items: center; /* Centrage des liens */
-    }
-
-    .nav-links li {
-        margin: 10px 0; /* Espacement entre les liens */
-    }
-}
 
 /* Tablette Paysage : De 1024px à 1279px */
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -301,3 +283,90 @@ footer {
         flex-direction: row; /* Disposition horizontale pour la navigation */
     }
 }
+/*  */
+/* Mobile : De 768px à 1023px */
+@media (max-width: 768px)  {
+    /* Ajustement du grid : 2 colonnes */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px; /* Réduction de l'espace entre les éléments */
+    }
+    .oh2_div1 {
+       position: relative;
+       left: 250px;
+       top:-800px;
+
+    }
+    /* #oimge_principale {
+        content: url('../../assets/images/istockphoto-Balcon 3 (2).png'); 
+        width: 400px; 
+        left: 20px;
+        bottom: -25px;
+        width:180px;
+    }  */
+    
+    .styled-btn {
+        background-color: #a6c9f0; /* Bleu clair */
+        border: none;
+        border-radius: 50px; /* Coins arrondis */
+        padding: 8px 20px;
+        height: 20px;
+        font-family: 'Bree Serif', serif;
+        font-size: 12px;
+        color: black;
+        cursor: pointer;
+        text-decoration: none; /* Pas de soulignement */
+        display: inline-block; /* Permet d'utiliser les propriétés de bloc */
+        transition: transform 0.2s; /* Animation au survol */
+    }
+
+    /* Ajustement du texte */
+    h1 {
+        font-size: 28px; /* Taille de titre réduite */
+        position: relative;
+        
+    }
+
+    .odiv1 {
+        left: 50px; /* Ajuster la position latérale */
+        bottom: 200px; /* Ajuster la hauteur */
+    }
+
+    #oimg_principale {
+        width: 400px; /* Image plus petite */
+        left: 20px;
+    }
+
+    /* Navigation en colonne pour les mobiles */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Plus d'espacement vertical */
+    }
+
+    /* Ajustement du bouton */
+    .styled-btn {
+        padding: 12px 40px; /* Bouton légèrement réduit */
+    }
+    
+    footer {
+        flex-direction: column; /* Organisation verticale du footer */
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 60%; /* Image de logo plus petite */
+    }
+
+    .footer-links, .footer-contact {
+        max-width: 100%; /* Full-width pour les liens */
+        margin: 20px 0;
+    }
+}
+
+/* partie media queries */
