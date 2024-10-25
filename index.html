@@ -13,7 +13,12 @@
             <div class="logo">
                 <img src="assets/images/logo.png" alt="ImmoView Logo">
             </div>
-            <ul class="nav-links">
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="#">Catalogue</a></li>
                 <li><a href="#">Détails</a></li>
@@ -112,7 +117,6 @@
         </section>
 
 
-
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
@@ -142,5 +146,13 @@
         </div>
     </div>
 </footer>
+<script>
+    const burgerMenu = document.getElementById('burger-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    });
+</script>
 </body>
-</html>
+</html> 

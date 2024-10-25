@@ -6,6 +6,7 @@ body {
     font-weight: bold;
     font-style: normal;
 }
+
 .accuille-h {
     background-color: #022E62;
     border: none;
@@ -17,6 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -336,11 +338,162 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #FFD700; /* Change to desired hover color */
+    color: #FFD700; 
 }
 
 .footer-contact p {
     font-size: 14px;
     margin: 30px 0;
 }
+.burger-menu {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
 
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.nav-links {
+    display: flex; 
+}
+
+.nav-links.active {
+    display: flex; 
+    flex-direction: column;
+    width: 100%; 
+    background-color: #022E62; 
+    position: absolute; 
+    top: 60px; 
+    left: 0;
+    z-index: 1; 
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        padding: 30px 30px;
+    }
+
+    .immo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .immo h1 {
+        font-size: 2em;
+    }
+
+    .immo p {
+        font-size: 1.5em;
+    }
+
+    .immo-buttons {
+        flex-direction: column;
+    }
+
+    .first-btn, .seconde-btn {
+        width: 100%;
+        margin: 10px 0; 
+    }
+
+    .accuille-image img {
+        max-width: 100%;
+        padding-left: 0;
+    display: none;
+    }
+#carousel-ac{
+    display: none;
+}
+    #paragraph-mission, #paragraph-mission h1 {
+        margin: 50px 20px; 
+        font-size: 24px; 
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+
+    .service-card {
+        margin: 10%; 
+    }
+
+    .faq-section h1 {
+        font-size: 28px;
+    }
+
+    .faq-section p {
+        font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .footer-container {
+        flex-direction: column; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    nav {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .immo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .immo h1 {
+        font-size: 2.5em;
+    }
+
+    .immo p {
+        font-size: 1.75em;
+    }
+
+    .immo-buttons {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .first-btn, .seconde-btn {
+        width: auto;
+        margin: 0 10px; 
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+}
