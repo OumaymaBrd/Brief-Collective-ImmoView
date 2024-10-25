@@ -1,0 +1,137 @@
+/* partie queries delapage Commentaire */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+    .accuille-h{
+        width: 1023px ;
+        height: 300px;
+    }
+    #content_remplace_h1::after {
+        content: 'Bienvenue sur notre page';
+        display: block; 
+        color:white;
+       position: relative;
+       bottom:100px;
+       left:28px;
+    }
+    
+
+.main-container {
+flex-direction: column; /* Aligne les éléments verticalement */
+align-items: center; /* Centre le contenu */
+margin-top: 30px;
+}
+
+.image-container {
+margin: 0 auto 10px; /* Centrer l'image */
+}
+.cacher_content{
+    display: none;
+}
+
+.image-container img {
+display: none;
+}
+#delete_imge1{
+display: none;
+}
+#img1{
+    width: 200px;
+}
+
+.ocontainer {
+    width: 40%; /* Réduit la largeur pour mieux s'adapter à l'écran */
+    background-color: white;
+    /* background-color: #91BBFF; */
+    border-radius: 8px; /* Ajuste le bord pour un style plus doux */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    right: 40px;
+    left:-180px;
+    }
+    
+h2 {
+font-size: 18px; /* Réduit la taille du titre */
+}
+
+input[type="text"], input[type="email"], input[type="file"], textarea {
+width: 60%; 
+height: 20px; 
+padding: 3px;
+border-radius: 10px; 
+border: 1px solid #ccc; 
+margin-bottom: 15px; 
+font-size: 8px; 
+}
+
+textarea {
+height: 140px; 
+}
+
+button {
+width: 130px; /* Réduit la largeur du bouton */
+height: 30px; /* Ajuste la hauteur du bouton */
+font-size: 10px; /* Ajuste la taille de la police */
+border-radius: 10px; /* Arrondit les coins du bouton */
+}
+
+.immo-content h1 {
+font-size: 22px; /* Ajuste la taille du titre */
+}
+
+.immo-content p {
+font-size: 16px; /* Ajuste la taille du texte */
+}
+
+nav {
+flex-direction: column; /* Empile les éléments de navigation */
+align-items: center; /* Centre le contenu */
+}
+
+.nav-links {
+flex-direction: column; /* Aligne les liens verticalement */
+}
+
+.nav-links li {
+margin: 5px 0; /* Réduit l'espacement des liens */
+}
+
+#label1{
+    font-size: 9px !important;
+    
+}
+}
+
+/* Partie queries de la page temoignage  */
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    #oimg_principale {
+        display: none;
+
+    }
+    #oh2_div1
+    {
+        display: none;
+    }
+    #opdiv1{
+        display: none;
+    }
+   
+    .testimonials-grid{
+        display: none;
+    }
+
+
+
+
+}
+
+
+/* afficherhistorieue  */
+@media (min-width: 768px) and (max-width: 1023px){
+
+    
+
+}

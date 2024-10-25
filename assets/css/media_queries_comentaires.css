@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ocontainer {
+    width: 600px;
+    padding: 20px;
+    background-color: #91BBFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    align-self: flex-start;
+    margin: 10px 0 5px;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Bree Serif';
+    font-size: 20px;
+}
+
+
+input[type="text"], input[type="email"], input[type="file"], textarea {
+    width: 70%;
+    height: 43px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    position: relative;
+    bottom: 16px;
+    left: 48px;
+    font-family: 'Bree Serif';
+}
+
+textarea {
+    height: 205px;
+    resize: none;
+    position: relative;
+    left: 60px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #C0C0C0;
+    text-align: center;
+}
+
+textarea::placeholder {
+    color: #C0C0C0;
+    position: relative;
+    bottom: -80px;
+}
+
+button {
+    background-color: #8896C5;
+    color: black;
+    width: 200px;
+    height: 28px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Bree Serif';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #6778B5;
+}
+
+/* Style pour les titres et paragraphes en dehors du formulaire */
+h1, p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #000;
+}
+
+header {
+width:  100vw;
+height: 100vh;
+background-color: #ECF0F1;
+font-family: "DM Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: bold;
+font-style: normal;
+}
+.accuille-h {
+background-color: #022E62;
+border: none;
+padding: 0 50px;
+}
+.o_h2{
+    font-size: 12px !important;
+    font-weight: none;
+}
+
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+margin-left: 10%;
+margin-top: 20px;
+}
+
+.logo img {
+width: 50%;
+margin-right: 90%;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+margin-right: 10%;
+}
+
+.nav-links li {
+margin: 0 15px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: white;
+font-size: 17px;
+}
+/* media queries  */

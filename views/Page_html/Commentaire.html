@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Commentaire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/media_queries_comentaires.css">
+    <link rel="stylesheet" href="../../assets/css/queries.css">
+    <style>
+        
+        .alert {
+            display: none;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        
+    </style>
+    <script src=""></script>
+</head>
+<body class="o_body" style="overflow-x: hidden;">
+
+    <header class="accuille-h">
+        <nav>
+            <div class="logo">
+                <img src="../../assets/images/logo.png" alt="ImmoView Logo">
+            </div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">Détails</a></li>
+                <li><a href="#">Témoignages</a></li>
+            </ul>
+        </nav>
+        <section class="immo">
+           
+            <div class="accuille-image"> 
+                <img src="../../assets/images/callabo.png" width="330px"  id="delete_imge1" style="position: relative; left:440px;">
+            </div>
+
+            <div class="immo-content" id="content_remplace_h1">
+                <h1 class="cacher_content" style="color:white;  font-family: 'Bree Serif'; font-size: 30px;">Bienvenue sur la page dédiée à vos avis sur notre service</h1>
+                <p   class="cacher_content" style="color:white;  font-family: 'Bree Serif';">Partagez votre opinion avec nous !</p>
+                
+                
+            </div>
+        </section>
+</header>
+
+
+    <div class="main-container" style="position: relative; right:100px;">
+        <div class="image-container" style="position: relative; right:80px; top:200px;">
+            <img src="../../assets/images/homme2.png" alt="Avatar">
+        </div>
+
+        <!-- Form Container -->
+        <div class="ocontainer" >
+            <h2 class="o_h2"style="font-family: 'Bree Serif'; font-size: 20px; font-weight: bold;">Merci de compléter le formulaire.</h2>
+            <form >
+                <label for="name" id="label1">Full Name:</label>
+                <input type="text" id="name" placeholder="Entrer Votre Nom">
+
+                <label for="email" id="label1">Email :</label>
+                <input type="email" id="email" placeholder="Entrer Votre Email">
+
+                <label for="image" id="label1">Insérer Image :</label>
+                <input type="file" id="image">
+
+                <label for="opinion" id="label1">Votre opinion :</label>
+                <textarea id="opinion" placeholder="Entrer Votre Opinion"></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="alert" id="alert"></div>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const opinion = document.getElementById("opinion").value.trim();
+        const alertDiv = document.getElementById("alert");
+        let alertMessage = "";
+
+        // Validation du nom complet (doit contenir au moins deux mots)
+        const nameRegex = /^[a-zA-Z]{2,}(?:\s[a-zA-Z]{2,})+$/;
+        if (!nameRegex.test(name)) {
+            alertMessage += "Le nom complet doit contenir au moins deux mots. <br>";
+        }
+
+        // Validation de l'email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alertMessage += "Veuillez entrer un email valide. <br>";
+        }
+
+        // Validation de l'opinion (doit avoir au moins 10 caractères)
+        if (opinion.length < 10) {
+            alertMessage += "Votre opinion doit contenir au moins 10 caractères. <br>";
+        }
+
+        // Affichage des alertes si des erreurs existent
+        if (alertMessage) {
+            alertDiv.innerHTML = alertMessage;
+            alertDiv.style.display = "block";
+        } else {
+            alertDiv.style.display = "none";
+            alert("Formulaire soumis avec succès !");
+            // Ici, vous pouvez ajouter le code pour soumettre le formulaire
+        }
+    });
+</script>
+        </div>
+    </div>
+
+</body>
+</html>

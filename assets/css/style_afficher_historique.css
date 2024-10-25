@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+}
+.accuille-h {
+background-color: #022E62;
+border: none;
+padding: 0 50px;
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+margin-left: 10%;
+margin-top: 20px;
+}
+
+.logo img {
+width: 50%;
+margin-right: 90%;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+margin-right: 10%;
+}
+
+.nav-links li {
+margin: 0 15px;
+}
+
+.nav-links a {
+text-decoration: none;
+color: white;
+font-size: 17px;
+}
+
+.nav-links a:hover {
+color: black;
+background-color: rgba(255, 3, 16, 0.628);
+padding: 10px;
+border-radius: 10px;
+}
+
+.immo {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: auto;
+color: white;
+}
+
+.immo-content {
+max-width: 100%;
+}
+
+.immo h1 {
+font-size: 3em;
+}
+
+.immo p {
+font-size: 2em;
+}
+
+.immo-buttons {
+margin-top: 20px;
+}
+
+.first-btn, .seconde-btn {
+text-decoration: none;
+padding: 10px 30px;
+border-radius: 20px;
+margin-right: 20px;
+font-weight: bold;
+}
+
+.first-btn {
+background-color: #ffffff;
+color: #022E62;
+}
+
+.first-btn:hover {
+background-color: #a9eb10;
+}
+
+.seconde-btn {
+background-color: transparent;
+color: white;
+border: 1px solid white;
+}
+
+.seconde-btn:hover {
+background-color: #a9eb10;
+color: #022E62;
+}
+
+.accuille-image img {
+max-width: 103%;
+height: auto;
+padding-left: 6.1%;
+}
+
+#carousel-ac {
+display: flex;
+overflow: hidden;
+width: 100%;
+}
+
+.carousel-container {
+display: flex;
+width: 300%;
+animation: slide 15s infinite;
+gap: 10%;
+}
+
+.carousel-slide {
+flex: 1;
+}
+
+.carousel-slide img {
+width: 100%;
+height: auto;
+display: flex;
+}
+
+/*  */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+    color: #2e3192;
+    font-size: 2.5em;
+}
+
+.property-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.property-image {
+    
+    border-radius: 8px;
+}
+
+.property-details h2 {
+    color: #2e3192;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.share-btn {
+    background-color: #BAC2E0;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    position: relative;
+    left: 40% !important;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #5A6CAE;
+    position: relative;
+    right:140px;
+    bottom:150px;
+    font-family: 'Bree Serif';
+    font-size: 30px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonial-text h3 {
+    font-size: 1.2em;
+    color: #2e3192;
+    margin-bottom: 10px;
+}
+
+.testimonial-text p {
+    font-size: 1em;
+    color: #333;
+}
+
+
+.afichage_nom_email{
+    background-color: #D9D9D9;
+    width:18%;
+    height: 60px !important;
+    border-radius: 5px;
+    color:#192B6E;
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    position: relative;
+    left:1%;
+    
+    
+
+}
+.email_content{
+    position:relative;
+    bottom:15px;
+    left:15%;
+}
+.name_content{
+    position: relative;
+    left:10%;
+}
+
+.ligne_divisible {
+    display: flex;                
+    flex-direction: column;       
+    width: 1px;                   
+    height: 220px;                
+    background-color: #192B6E;  
+    position: relative;
+    left:20%;
+    top:201.80px; 
+    
+}
+
+.profile-pic{
+    position: relative;
+    bottom:80px;
+    left:80px;
+}
+
+.contenue_welcome{
+    position: relative;
+    right:305px;
+}
+
