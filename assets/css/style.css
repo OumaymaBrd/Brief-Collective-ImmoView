@@ -3017,11 +3017,6 @@
 
 
 
-/* *{
-    border:1px solid red;
-    font-family: sans-serif;
-} */
-
 .abody{
     margin-left: 5em;
 }
@@ -3029,6 +3024,7 @@
 #aslide-1{
     width: 60vw;
     height: 80vh;
+    border-radius: 0.313rem;
 }
 
 .acontainer{
@@ -3041,22 +3037,27 @@
 #aslide-2{
     width: 10vw;
     margin-left: -1rem;
+    border-radius: 0.313rem;
 }
 
 #aslide-3{
     width: 10vw;
+    border-radius: 0.313rem;
 }
 
 #aslide-4{
     width: 10vw;
+    border-radius: 0.313rem;
 }
 
 #aslide-5{
     width: 10vw;
+    border-radius: 0.313rem;
 }
 
 #aslide-6{
     width: 10vw;
+    border-radius: 0.313rem;
 }
 
 .aslide-nav-for{
@@ -3113,6 +3114,7 @@
 #aslide-6:hover{
     opacity:50%;
 }
+
 .aform-container {
     background-color: #e0e0e0;
     padding: 1.25rem 1.25rem 27rem 1.25rem;
@@ -3189,20 +3191,20 @@ input{
 #aibiza{
     width:20vw;
     height: 27vh;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     margin-left: -8rem;
 }
 
 #abouskoura{
     width:20vw;
     height: 27vh;
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 #alos-angeles{
     width:20vw;
     height: 27vh;
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 
 .abiens{
@@ -3232,6 +3234,10 @@ a h3{
     
 }
 
+.abform-container{
+    display: none;
+}
+
 
 
 
@@ -3251,7 +3257,7 @@ a h3{
 
 
 /* à enlever */
-/* nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3422,4 +3428,131 @@ footer {
     .footer-container {
         flex-direction: column; 
     }
-} */
+}
+ 
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .abody {
+      margin-left: 3em;
+    }
+
+    .abform-container{
+        display: none;
+    }    
+
+    #aslide-1 {
+      width: 55vw;
+      height: 75vh;
+    }
+
+    #aslide-2, #aslide-3, #aslide-4, #aslide-5, #aslide-6{
+        margin-left: 0;
+    }
+
+    .acontainer img {
+      width: 9vw;
+    }
+
+    .aform-container{
+        position: relative;
+        right: 4.9rem;
+        bottom: 32.969rem;
+        padding: 1.25rem 1.25rem 28rem 1.25rem;
+    }
+
+    .abiens{
+        margin-left: 2.5rem;
+    }
+
+    .aslide-nav-for, .aslide-nav-back{
+        display: none;
+    }
+    
+    #aibiza, #abouskoura, #alos-angeles {
+      width: 18vw;
+      height: 25vh;
+    }
+
+    .abtitle, .abtitle1{
+        font-size: 1rem;
+    }
+  }
+  
+  
+  
+  /* Mobile portrait : jusqu'à 767px */
+  @media screen and (max-width: 768px) {
+    .abody {
+      margin-left: 1em;
+    }
+
+    #aslide-1 {
+      width: 85vw;
+      height: 80vh;
+    }
+
+    .aslide-nav-back, .aslide-nav-for{
+        display: none;
+    }
+
+    .acontainer {
+      display: block;
+    }
+
+    .acontainer img {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    .abiens{
+        display: grid;
+    }
+
+    #aibiza, #abouskoura, #alos-angeles {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+    }
+
+    .aform-container{
+        display: none;
+    } 
+
+    #aslide-2, #aslide-3, #aslide-4, #aslide-5, #aslide-6{
+        margin-left: 0;
+        width: 15vw;
+        height: 15vh;
+    }
+
+    .aimg-container{
+        border:1px solid blue;
+        display: flex;
+        gap: 20px;
+        width: 85vw;
+    }
+
+    .abtitle1, .aplus1{
+        margin-left: 7.875rem;
+    }
+
+    .abform-container{
+        background-color: #e0e0e0;
+        padding: 1.25rem 1.25rem 27rem 1.25rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        
+    }
+
+   .aenvoi {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  }
+  
