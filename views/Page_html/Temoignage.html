@@ -6,6 +6,7 @@
     <title>Témoignages Inspirants</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../../assets/css/style_temoignage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <script src="../../assets/js/action.js"></script>
     <style>
         /* Styles pour cacher le contenu */
@@ -64,6 +65,107 @@ color: white;
 font-size: 17px;
 }
 
+.styled-btn {
+            background-color: #a6c9f0; /* Bleu clair */
+            border: none;
+            border-radius: 50px; /* Coins arrondis */
+            padding: 15px 50px;
+            font-family: 'Bree Serif', serif;
+            font-size: 14px;
+           
+            color: black;
+            cursor: pointer;
+            text-decoration: none; /* Pas de soulignement */
+            display: inline-block; /* Permet d'utiliser les propriétés de bloc */
+            transition: transform 0.2s; /* Animation au survol */
+        }
+
+        .styled-btn:hover {
+            transform: scale(1.05); /* Agrandir légèrement au survol */
+        }
+
+        .styled-btn:active {
+            transform: scale(0.95); /* Réduire légèrement au clic */
+        }
+
+        footer {
+    background-color: #1a2a52;
+    padding: 70px 50px;
+    color: white;
+    width:  100vw;
+    height: 50vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    max-width: 400px;
+    position: relative;
+    left:50px;
+}
+
+.footer-logo img {
+    height: 50%;
+    width: 70%;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin: -20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20%;
+}
+
+.social-icons a img {
+    width: 18px;
+    height: 18px;
+}
+
+.social-icons a:hover img {
+    filter: brightness(0.10);
+}
+
+.footer-links, .footer-contact {
+    max-width: 200px;
+}
+
+.footer-links h3, .footer-contact h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 30px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #FFD700; /* Change to desired hover color */
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin: 30px 0;
+}
     </style>
 </head>
 
@@ -87,7 +189,7 @@ font-size: 17px;
         <div style="position: relative; bottom: 300px; left: 600px;  ">
             <h2 style="color: white; font-size: 38px; font-family: 'Bree Serif' ; position: relative; left: 38px;">Bienvenue sur notre page</h2>
             <br> 
-        <h2 style="color: white; font-family: 'Bree Serif' ; position: relative; left: 48px;">Ce page dédiée aux avis et partages <br> d'expériences de nos clients.</h2>
+        <p style="color: white; font-family: 'Bree Serif' ; position: relative; left: 48px; font-size: 24px !important;">Ce page dédiée aux avis et partages <br> d'expériences de nos clients.</p>
 
         </div>
     </header>
@@ -97,18 +199,23 @@ font-size: 17px;
         <div class="testimonials-grid">
 
             <!-- first card  -->
-            <div class="testimonial-card">
-                <img src="../../assets/images/image1.png" alt="Image 1">
-                <a href="Afficher_historique.html#dev1" id="Historique1">Afficher Historique</a>
+            <!-- testimonial-card -->
+            <div >
+                <img src="../../assets/images/image1.png" alt="Image 1" width="300px"> 
+                
+                <a href="Afficher_historique.html#dev1" class="styled-btn" id="Historique1" role="button" style="position: relative; bottom:-20px;">
+                    Afficher Historique
+                </a>
+
             </div>
 
             <!-- /fin first -->
 
             <!-- second -->
 
-            <div class="testimonial-card">
-                <img src="../../assets/images/image2.png" alt="Image 2">
-                <a href="Afficher_historique.html#dev2" id="Historique2">Afficher Historique</a>
+            <div >
+                <img src="../../assets/images/image2.png" alt="Image 2" width="280px;">  
+                <a href="Afficher_historique.html#dev2" class="styled-btn" id="Historique2" style="position: relative; bottom:-20px;">Afficher Historique</a>
                 <!-- <button>Afficher Historique</button> -->
             </div>
 
@@ -116,9 +223,9 @@ font-size: 17px;
             <!-- fin second -->
             
             <!-- 3 rd  -->
-            <div class="testimonial-card">
-                <img src="../../assets/images/image3.png" alt="Image 3">
-                <a href="Afficher_historique.html#dev33" id="Historique3">Afficher Historique</a>
+            <div >
+                <img src="../../assets/images/image3.png" alt="Image 3" width="270px;">
+                <a href="Afficher_historique.html#dev33" class="styled-btn" id="Historique3" style="position: relative; bottom:-20px;">Afficher Historique</a>
                 <!-- <button>Afficher Historique</button> -->
             </div>
 
@@ -127,31 +234,35 @@ font-size: 17px;
 
             <!-- 4  -->
 
-            <div class="testimonial-card">
-                <img src="../../assets/images/image21.png" alt="Image 4">
+            <div >
+                <br> <br>
+                <img src="../../assets/images/image21.png" alt="Image 4" width="300px;">
                 <!-- <button>Afficher Historique</button> -->
-                <a href="Afficher_historique.html#historique4" id="Historique3">Afficher Historique</a>
+                <a href="Afficher_historique.html#historique4" id="Historique3" class="styled-btn" style="position: relative; bottom:-20px;">Afficher Historique</a>
             </div>
             <!-- fin 4 -->
 
             <!--  5  -->
 
-            <div class="testimonial-card">
-                <img src="../../assets/images/image22.png" alt="Image 5">
-                <a href="Afficher_historique.html#historique5" id="Historique5">Afficher Historique</a>
+            <div >
+                <br> <br>
+                <img src="../../assets/images/image22.png" alt="Image 5" width="283px;">
+                <a href="Afficher_historique.html#historique5" id="Historique5" class="styled-btn" style="position: relative; bottom:-20px;">Afficher Historique</a>
                
             </div>
             <!-- fin 5 -->
 
             <!-- 6  -->
             
-            <div class="testimonial-card">
-                <img src="../../assets/images/image23.png" alt="Image 6">
-                <a href="Afficher_historique.html#historique6" id="Historique6">Afficher Historique</a>
+            <div >
+                <br> <br>
+                <img src="../../assets/images/image23.png" alt="Image 6" width="277px">
+                <a href="Afficher_historique.html#historique6" id="Historique6" class="styled-btn" style="position: relative; bottom:-20px;">Afficher Historique</a>
             </div>
 
             <!-- fin 6 -->
         </div>
+        <br> <br>
     </div>
 
     <!-- Un conteneur vide où le contenu de la page Afficher_historique.html sera chargé -->
@@ -163,6 +274,37 @@ font-size: 17px;
        window.location.href = 'Commentaire.html';
    });
    </script>
+
+<footer>
+    
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="../../assets/images/logo.png" alt="ImmoView Logo">
+            <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+            <br>
+            <div class="social-icons">
+                <a href="#"><img src="../../assets/images/Vector.png" alt="Instagram"></a>
+                <a href="#"><img src="../../assets/images/Vector (1).png" alt="Twitter"></a>
+                <a href="#"><img src="../../assets/images/Vector (2).png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h3>Article</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">Détails</a></li>
+                <li><a href="#">Témoignages</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+            <p>(671) 555-0110</p>
+            <p>info@thauinter.com</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
