@@ -55,6 +55,34 @@ nav {
     padding: 10px;
     border-radius: 10px;
 }
+.burger-menu {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.burger-menu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.nav-links {
+    display: flex; 
+}
+
+.nav-links.active {
+    display: flex; 
+    flex-direction: column;
+    width: 100%; 
+    background-color: #022E62; 
+    position: absolute; 
+    top: 60px; 
+    left: 0;
+    z-index: 1; 
+}
 
 .immo {
     display: flex;
@@ -269,6 +297,7 @@ nav {
     margin: 10px 0 0;
     padding-top: 10px;
     border-top: 1px solid #eee;
+    font-size: 12px;
 }
 
 footer {
@@ -345,35 +374,6 @@ footer {
     font-size: 14px;
     margin: 30px 0;
 }
-.burger-menu {
-    display: none; 
-    flex-direction: column;
-    cursor: pointer;
-    margin-right: 20px;
-}
-
-.burger-menu .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-}
-
-.nav-links {
-    display: flex; 
-}
-
-.nav-links.active {
-    display: flex; 
-    flex-direction: column;
-    width: 100%; 
-    background-color: #022E62; 
-    position: absolute; 
-    top: 60px; 
-    left: 0;
-    z-index: 1; 
-}
-
 
 
 /* Media Queries for Responsiveness */
