@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Détails du bien</title>
         <link rel="stylesheet" href="../assets/css/style.css">
-    </head>
-    <body>
+</head>
+<body>
         <nav class="amynav">
             <div class="logo">
                 <img src="../assets/images/logo 2.png" alt="ImmoView Logo">
             </div>
-            <ul class="nav-links">
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="#">Catalogue</a></li>
                 <li><a href="#">Détails</a></li>
-                <li><a href="#" class="Témoignages">Témoignages</a></li>
+                <li><a href="#">Témoignages</a></li>
             </ul>
         </nav>
         
-        <main>
+    <main>
+        <div class="abody">
             <h1 class="atitre">Appartement 8e arrondissement Paris 58 m² (75008)</h1>
             <h1 class="asous-titre">1.000.000 €</h1>
             <img id="aslide-1" src="../assets/images/istockphoto-Balcon.jpg" alt="Fenêtre intérieure avec vue d'un appartement parisien">
@@ -36,6 +42,19 @@
                     <img src="../assets/images/arrow_forward.svg">
                 </div>
             </section>
+            <div class="aform-container">
+                <h2>Contactez le propriétaire</h2>
+                <form action="#" method="POST">
+                    <input type="text" name="prenom" placeholder="Votre prénom...">
+                    <input type="text" name="nom" placeholder="Votre nom..." >
+                    <input type="email" name="email" placeholder="Votre e-mail..." >
+                    <input class="amessage" name="message" placeholder="Votre message..." ></textarea>
+                    <div class="aenvoi">
+                        <button class="ableu" type="submit">Envoyez la demande</button>
+                        <button class="ablanc" type="submit">Téléphoner</button>
+                    </div>
+                </form>
+            </div>
             <div>
                 <h1 class="atitle">Paris 8e (75008)</h1>
                 <h2 class="asubtitle">3 pièces / 2 chambres/ 58 m² / 17.241 le m²</h2>
@@ -62,39 +81,36 @@
                     </div>
                 </a>
             </div>
-
-        </main>
+        </div>
+    </main>
 <!-- code à enlever -->
  <hr>
-        <footer class="amyfoot">
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <img src="../assets/images/logo 2.png" alt="ImmoView Logo">
-                    <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
-                    <br>
-                    <div class="social-icons">
-                        <a href="#"><img src="../assets/images/Vector.png" alt="Instagram"></a>
-                        <a href="#"><img src="../assets/images/Vector (1).png" alt="Twitter"></a>
-                        <a href="#"><img src="../assets/images/Vector (2).png" alt="Facebook"></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3>Article</h3>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#">Catalogue</a></li>
-                        <li><a href="#">Détails</a></li>
-                        <li><a href="#">Témoignages</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
-                    <p>(671) 555-0110</p>
-                    <p>info@thauinter.com</p>
+    <footer class="amyfoot">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/images/logo 2.png" alt="ImmoView Logo">
+                <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+                <br>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/images/Vector.png" alt="Instagram"></a>
+                    <a href="#"><img src="../assets/images/Vector (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="../assets/images/Vector (2).png" alt="Facebook"></a>
                 </div>
             </div>
-        </footer>
-    
-    </body>
+            <div class="footer-links">
+                <h3>Article</h3>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Catalogue</a></li>
+                    <li><a href="#">Détails</a></li>                        <li><a href="#">Témoignages</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>2464 Royal Ln. Mesa, New Jersey 45463</p>                    <p>(671) 555-0110</p>
+                <p>info@thauinter.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

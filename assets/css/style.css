@@ -3022,37 +3022,41 @@
     font-family: sans-serif;
 } */
 
+.abody{
+    margin-left: 5em;
+}
+
 #aslide-1{
-    width: 97vw;
-    height: 90vh;
+    width: 60vw;
+    height: 70vh;
 }
 
 .acontainer{
     display: flex;
     height: 15vh;
-    justify-content: space-around;
     margin-top: 2rem;
+    gap: 1.2em;
 }
 
 #aslide-2{
-    width: 14vw;
+    width: 10vw;
     margin-left: -1rem;
 }
 
 #aslide-3{
-    width: 14vw;
+    width: 10vw;
 }
 
 #aslide-4{
-    width: 14vw;
+    width: 10vw;
 }
 
 #aslide-5{
-    width: 14vw;
+    width: 10vw;
 }
 
 #aslide-6{
-    width: 14vw;
+    width: 10vw;
 }
 
 .aslide-nav-for{
@@ -3077,6 +3081,7 @@
 
 .atitle{
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .asubtitle{
@@ -3089,6 +3094,88 @@
     opacity:50%;
 }
 
+#aslide-3:hover{
+    opacity:50%;
+}
+
+#aslide-4:hover{
+    opacity:50%;
+}
+
+#aslide-5:hover{
+    opacity:50%;
+}
+
+#aslide-6:hover{
+    opacity:50%;
+}
+.aform-container {
+    background-color: #e0e0e0;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+    left: 60em;
+    bottom: 41.7em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+input{
+    margin-bottom: 15px;
+    padding: 10px 1px 10px 1px ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.amessage {
+    height: 80px;
+}
+
+.ableu {
+    padding: 10px;
+    background-color: #002855;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.ableu:hover {
+    background-color: #fff;
+    color:#022E62;
+}
+
+.ablanc {
+    padding: 10px;
+    background-color: white;
+    color: #002855;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.ablanc:hover {
+    background-color:#022E62 ;
+    color:#fff;
+}
+
+.aenvoi{
+    display: flex;
+    gap: 0.5em;
+}
+
 .alorem{
     font-size: medium;
     text-align: justify;
@@ -3096,25 +3183,25 @@
 }
 
 #aibiza{
-    width:50vw;
+    width:5vw;
 }
 
 #abouskoura{
-    width:50vw;
+    width:5vw;
 }
 
 #alos-angeles{
-    width:50vw;
+    width:5vw;
 }
 
 .abiens{
-    display:grid;
+    display:flex;
 }
 
 .abiens a{
     text-decoration: none;
     color: #000;
-    margin-left: 12em;
+    margin-left: 1em;
 }
 
 a h1{
@@ -3136,5 +3223,4 @@ a h3{
 hr{
     border:10px solid black;
 }
-
 
