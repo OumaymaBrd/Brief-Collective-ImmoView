@@ -4188,7 +4188,7 @@ select option {
         
         
         .headm{
-            background-image: url(../../assets/images/backgroundm.jpg);
+            background-image: url(../assets/images/backgroundm.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
