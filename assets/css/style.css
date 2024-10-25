@@ -3028,14 +3028,14 @@
 
 #aslide-1{
     width: 60vw;
-    height: 70vh;
+    height: 80vh;
 }
 
 .acontainer{
     display: flex;
     height: 15vh;
     margin-top: 2rem;
-    gap: 1.2em;
+    gap: 1.7em;
 }
 
 #aslide-2{
@@ -3111,42 +3111,42 @@
 }
 .aform-container {
     background-color: #e0e0e0;
-    padding: 20px 20px 20px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    padding: 1.25rem 1.25rem 27rem 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    width: 18.75rem;
     position: relative;
-    left: 60em;
-    bottom: 41.7em;
+    bottom: 39.5em;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 0.313rem;
+    margin-bottom: 1.25rem;
     color: #000;
 }
 
 input{
-    margin-bottom: 15px;
-    padding: 10px 1px 10px 1px ;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    margin-bottom: 0.938rem;
+    padding: 0.625rem 0.063rem 0.625rem 0.063rem ;
+    border: 0.063rem solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1em;
     width: 100%;
 }
 
 .amessage {
-    height: 80px;
+    height: 5rem;
 }
 
 .ableu {
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #002855;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -3156,13 +3156,13 @@ input{
 }
 
 .ablanc {
-    padding: 10px;
+    padding: 0.625rem;
     background-color: white;
     color: #002855;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     text-transform: uppercase;
 }
 
@@ -3210,7 +3210,7 @@ a h1{
 
 a h3{
     color: #908D8D;
-    font-weight:200 ;
+    font-weight:100 ;
     margin-top: -1em;
     margin-bottom: 1em;
 }
@@ -3221,6 +3221,6 @@ a h3{
 
 /* code à enlever */
 hr{
-    border:10px solid black;
+    border:0.625rem solid black;
 }
 
