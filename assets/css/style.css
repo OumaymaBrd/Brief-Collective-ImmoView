@@ -3324,7 +3324,6 @@ a h3{
     }
 
     .aimg-container{
-        border:1px solid blue;
         display: flex;
         gap: 20px;
         width: 85vw;
