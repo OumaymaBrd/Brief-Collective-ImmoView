@@ -1,18 +1,13 @@
 body {
     margin: 0;
-    background-color: #ECF0F1;
-}
-
-.accuille-h {
     background-color: #021B43;
-    border: none;
-    padding: 0 50px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
 
 .logo {
@@ -1611,6 +1606,32 @@ footer {
     align-items: center;
     padding: auto;
     color: white;
+    height: 140vh;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Lexend:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body.lexend{
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+ .red-hat-display {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  } 
+
+
+.headm{
+    background-image: url(../assets/images/backgroundm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .interface-title {
@@ -1629,20 +1650,6 @@ footer {
 }
 
 
-/* .rectanglemain{
-
-    position: relative;
-    top: 9rem;
-    left: 10%;
-    right: 10%;
-    width:73rem;
-    height:10.5rem;
-    background:#071526; 
-    color: white;
-    /* padding: 5%; */
-    /* text-align: center;
-    border-radius: 25px; */
-/* } */
 
 .findbuttons .Location{
     padding: 1rem 3rem;
@@ -1686,7 +1693,11 @@ footer {
     display: flex;
     gap: 51px;
     max-width: 1055px;
-    margin: 220px auto;
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 144%;
 }
 
 .select-wrapper {
@@ -1705,7 +1716,7 @@ footer {
 }
 
 select {
-    width: 100%;
+     width: 200px; 
     background-color: #022E62;
     color: white;
     padding: 12px 24px;
@@ -1764,6 +1775,7 @@ select option {
     gap: 20px;
     justify-content: center;
     align-items: center;
+    margin-top: 19%;
 }
 
 .type-button {
@@ -1802,16 +1814,13 @@ select option {
 .villas-casa-sale{
 
     display: grid;
-    grid-template-columns: repeat(6 , 1fr);
-    grid-template-rows: repeat(4 , auto);
-    margin: 45px 150px ;
-    padding-left: 20px;
-    padding-right: 0px; 
-    
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
     position:relative;
+    margin: 0 20px;
     /* height: 428px;
     width: 342px; */
-    gap: 50px;
+    /* gap: 13px; */
 }
 
 .villas-casa-sale img{
@@ -1821,11 +1830,7 @@ select option {
 }
 
 
-.villas-title{
-    color:white; 
-    text-align: center;
-    margin-top: 7%;
-}
+
 
 
 .villas-rabat-sale{
@@ -1866,8 +1871,8 @@ select option {
    width: 100vw;
    height: 20vh;
    background-color: #ffffff;
-   position: relative;
-   right:67px;
+   /* position: relative;
+   right:67px; */
    overflow-x: hidden;
    
 }
@@ -1883,8 +1888,13 @@ select option {
 
 .store-buttons{
    display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+
    gap: 230px;
 }
+
 
 /* .store {
     margin-left: 0;
@@ -1963,326 +1973,581 @@ select option {
 
 
 
-/* Abdellah */
-.abody{
-    margin-left: 5em;
-}
 
-#aslide-1{
-    width: 60vw;
-    height: 80vh;
-    border-radius: 0.313rem;
-}
 
-.acontainer{
-    display: flex;
-    height: 15vh;
-    margin-top: 2rem;
-    gap: 1.7em;
-}
-
-#aslide-2{
-    width: 10vw;
-    margin-left: -1rem;
-    border-radius: 0.313rem;
-}
-
-#aslide-3{
-    width: 10vw;
-    border-radius: 0.313rem;
-}
-
-#aslide-4{
-    width: 10vw;
-    border-radius: 0.313rem;
-}
-
-#aslide-5{
-    width: 10vw;
-    border-radius: 0.313rem;
-}
-
-#aslide-6{
-    width: 10vw;
-    border-radius: 0.313rem;
-}
-
-.aslide-nav-for{
-    margin-top: 2.1em;
-}
-
-.aslide-nav-back{
-    margin-top: 2.1em;
-}
-
-.amynav {
-    margin: -0.625em -0.625em -0.625em -0.625em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #021B43;
-}
-
-.amyfoot {
-    margin: -0.625em -0.625em -0.625em -0.625em;
-}
-
-.atitre{
-    margin-top: 2em;
-}
-
-.atitle{
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-.asubtitle{
-    color:#908D8D;
-    font-weight: lighter;
-    margin-top: -0.313em;
-}
-
-#aslide-2:hover{
-    opacity:50%;
-}
-
-#aslide-3:hover{
-    opacity:50%;
-}
-
-#aslide-4:hover{
-    opacity:50%;
-}
-
-#aslide-5:hover{
-    opacity:50%;
-}
-
-#aslide-6:hover{
-    opacity:50%;
-}
-
-.aform-container {
-    background-color: #e0e0e0;
-    padding: 1.25rem 1.25rem 27rem 1.25rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    width: 18.75rem;
-    position: relative;
-    bottom: 39.5em;
-    left: 3em;
-}
-
-h2 {
+    /* .villas-title{
+    color:white; 
     text-align: center;
-    margin-top: 0.313rem;
-    margin-bottom: 1.25rem;
-    color: #000;
-}
-
-input{
-    margin-bottom: 0.938rem;
-    padding: 0.625rem 0.063rem 0.625rem 0.063rem ;
-    border: 0.063rem solid #ccc;
-    border-radius: 0.25rem;
-    font-size: 1em;
-    width: 100%;
-}
-
-.amessage {
-    height: 5rem;
-}
-
-.ableu {
-    padding: 0.625rem;
-    background-color: #002855;
-    color: white;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    font-size: 1em;
-    text-transform: uppercase;
-}
-
-.ableu:hover {
-    background-color: #fff;
-    color:#022E62;
-}
-
-.ablanc {
-    padding: 0.625rem;
-    background-color: white;
-    color: #002855;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    font-size: 1em;
-    text-transform: uppercase;
-}
-
-.ablanc:hover {
-    background-color:#022E62 ;
-    color:#fff;
-}
-
-.aenvoi{
-    display: flex;
-    gap: 0.5em;
-}
-
-.alorem{
-    font-size: medium;
-    text-align: justify;
-    margin-right: 0.313em;
-}
-
-#aibiza{
-    width:20vw;
-    height: 27vh;
-    border-radius: 0.313rem;
-    margin-left: -8rem;
-}
-
-#abouskoura{
-    width:20vw;
-    height: 27vh;
-    border-radius: 0.313rem;
-}
-
-#alos-angeles{
-    width:20vw;
-    height: 27vh;
-    border-radius: 0.313rem;
-}
-
-.abiens{
-    display:flex;
-    justify-content: space-around;
-}
-
-.abiens a{
-    text-decoration: none;
-    color: #000;
-    margin-left: 1em;
-}
-
-a h1{
-  margin-top: -0.1em;  
-}
-
-a h3{
-    color: #908D8D;
-    font-weight:100 ;
-    margin-top: -1em;
-    margin-bottom: 1em;
-}
-
-.adescription1{
-    margin-left: -8rem;   
-}
-
-  @media screen and (max-width: 1279px) and (min-width: 1024px) {
-    .abody {
-      margin-left: 3em;
+    margin-top: 219px;
+    margin-bottom: 100px;
     }
+     .carousel-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            gap: 20px;
+            overflow-x: hidden;
+            margin-top: 100px;
+        }
 
-    #aslide-1 {
-      width: 55vw;
-      height: 75vh;
-    }
+        .property-card {
+            flex: 0 0 calc(33.333% - 14px);
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-    #aslide-2, #aslide-3, #aslide-4, #aslide-5, #aslide-6{
-        margin-left: 0;
-    }
+        .property-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
 
-    .acontainer img {
-      width: 9vw;
-    }
+        .property-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+        }
 
-    .aform-container{
-        position: relative;
-        right: 4.9rem;
-        bottom: 32.969rem;
-        padding: 1.25rem 1.25rem 28rem 1.25rem;
-    }
+        .property-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-    .abiens{
-        margin-left: 2.5rem;
-    }
+        .property-location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
 
-    .aslide-nav-for, .aslide-nav-back{
-        display: none;
-    }
-    
-    #aibiza, #abouskoura, #alos-angeles {
-      width: 18vw;
-      height: 25vh;
-    }
+        .property-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
 
-    .abtitle, .abtitle1{
-        font-size: 1rem;
-    }
-  }
-  
-  
-  
-  /* Mobile portrait : jusqu'à 767px */
-  @media screen and (max-width: 768px) {
-    .abody {
-      margin-left: 1em;
-    }
+        .property-info {
+            opacity: 0.9;
+        }
 
-    #aslide-1 {
-      width: 85vw;
-      height: 80vh;
-    }
+        .property-price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .carousel-section{
+            position: relative;
+            width: fit-content;
+            margin: auto;
+            }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
 
-    .aslide-nav-back, .aslide-nav-for{
-        display: none;
-    }
+        .prev {
+            left: -80px;
+        }
 
-    .acontainer {
-      display: block;
-    }
+        .next {
+            right: -80px;
+        }
 
-    .acontainer img {
-      width: 100%;
-      margin-bottom: 0.5rem;
-    }
+        @media (max-width: 768px) {
+            .carousel-container {
+                gap: 10px;
+            }
+            
+            .property-card {
+                flex: 0 0 100%;
+            }
+        } */
 
-    .abiens{
-        display: grid;
-    }
+        .villas-title {
+            color: white;
+            text-align: center;
+            margin-top: 219px;
+            margin-bottom: 100px;
+        }
+        
+        .carousel-container {
+            max-width: 990px;  /* Adjusted to accommodate 3 cards of 300px + gaps */
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            gap: 50px;
+            overflow-x: hidden;
+            margin-top: 100px;
+            padding: 10px;  /* Added padding to prevent shadow cutoff */
+        }
+        
+        .property-card {
+            flex: 0 0 300px;  /* Changed to fixed width of 300px */
+            width: 300px;     /* Explicit width setting */
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .property-image {
+            width: 100%;
+            height: 428px; /* Adjusted for better proportion with new width */
+            object-fit: cover;
+        }
+        
+        .property-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+        }
+        
+        .property-title {
+            font-size: 20px;  /* Slightly reduced for better fit */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .property-location {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .property-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+        .property-info {
+            opacity: 0.9;
+        }
+        
+        .property-price {
+            font-size: 18px;  /* Slightly reduced for better fit */
+            font-weight: bold;
+        }
+        
+        .carousel-section {
+            position: relative;
+            width: fit-content;
+            margin: auto;
+        }
+        
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        
+        .prev {
+            left: -80px;
+        }
+        
+        .next {
+            right: -80px;
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-container {
+                max-width: 320px;  /* Slightly larger than card width to account for padding */
+                padding: 10px;
+            }
+            
+            .property-card {
+                flex: 0 0 300px;
+                width: 300px;  /* Maintain fixed width on mobile */
+            }
+        }
 
-    #aibiza, #abouskoura, #alos-angeles {
-      width: 100%;
-      height: auto;
-      margin-left: 0;
-    }
 
-    .aform-container{
-        display: none;
-    } 
 
-    #aslide-2, #aslide-3, #aslide-4, #aslide-5, #aslide-6{
-        margin-left: 0;
-        width: 15vw;
-        height: 15vh;
-    }
 
-    .aimg-container{
-        border:1px solid blue;
-        display: flex;
-        gap: 20px;
-        width: 85vw;
-    }
 
-    .abtitle1, .aplus1{
-        margin-left: 7.875rem;
-    }
 
-   .aenvoi {
-      flex-direction: column;
-      gap: 0.5em;
-    }
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .abody{
+            margin-left: 5em;
+        }
+        
+        #aslide-1{
+            width: 60vw;
+            height: 80vh;
+            border-radius: 0.313rem;
+        }
+        
+        .acontainer{
+            display: flex;
+            height: 15vh;
+            margin-top: 2rem;
+            gap: 1.7em;
+        }
+        
+        #aslide-2{
+            width: 10vw;
+            margin-left: -1rem;
+            border-radius: 0.313rem;
+        }
+        
+        #aslide-3{
+            width: 10vw;
+            border-radius: 0.313rem;
+        }
+        
+        #aslide-4{
+            width: 10vw;
+            border-radius: 0.313rem;
+        }
+        
+        #aslide-5{
+            width: 10vw;
+            border-radius: 0.313rem;
+        }
+        
+        #aslide-6{
+            width: 10vw;
+            border-radius: 0.313rem;
+        }
+        
+        .aslide-nav-for{
+            margin-top: 2.1em;
+        }
+        
+        .aslide-nav-back{
+            margin-top: 2.1em;
+        }
+        
+        .amynav {
+            margin: -0.625em -0.625em -0.625em -0.625em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #021B43;
+        }
+        
+        .amyfoot {
+            margin: -0.625em -0.625em -0.625em -0.625em;
+        }
+        
+        .atitre{
+            margin-top: 2em;
+        }
+        
+        .atitle{
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        
+        .asubtitle{
+            color:#908D8D;
+            font-weight: lighter;
+            margin-top: -0.313em;
+        }
+        
+        #aslide-2:hover{
+            opacity:50%;
+        }
+        
+        #aslide-3:hover{
+            opacity:50%;
+        }
+        
+        #aslide-4:hover{
+            opacity:50%;
+        }
+        
+        #aslide-5:hover{
+            opacity:50%;
+        }
+        
+        #aslide-6:hover{
+            opacity:50%;
+        }
+        
+        .aform-container {
+            background-color: #e0e0e0;
+            padding: 1.25rem 1.25rem 27rem 1.25rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+            width: 18.75rem;
+            position: relative;
+            bottom: 39.5em;
+            left: 3em;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 0.313rem;
+            margin-bottom: 1.25rem;
+            color: #000;
+        }
+        
+        input{
+            margin-bottom: 0.938rem;
+            padding: 0.625rem 0.063rem 0.625rem 0.063rem ;
+            border: 0.063rem solid #ccc;
+            border-radius: 0.25rem;
+            font-size: 1em;
+            width: 100%;
+        }
+        
+        .amessage {
+            height: 5rem;
+        }
+        
+        .ableu {
+            padding: 0.625rem;
+            background-color: #002855;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        
+        .ableu:hover {
+            background-color: #fff;
+            color:#022E62;
+        }
+        
+        .ablanc {
+            padding: 0.625rem;
+            background-color: white;
+            color: #002855;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        
+        .ablanc:hover {
+            background-color:#022E62 ;
+            color:#fff;
+        }
+        
+        .aenvoi{
+            display: flex;
+            gap: 0.5em;
+        }
+        
+        .alorem{
+            font-size: medium;
+            text-align: justify;
+            margin-right: 0.313em;
+        }
+        
+        #aibiza{
+            width:20vw;
+            height: 27vh;
+            border-radius: 0.313rem;
+            margin-left: -8rem;
+        }
+        
+        #abouskoura{
+            width:20vw;
+            height: 27vh;
+            border-radius: 0.313rem;
+        }
+        
+        #alos-angeles{
+            width:20vw;
+            height: 27vh;
+            border-radius: 0.313rem;
+        }
+        
+        .abiens{
+            display:flex;
+            justify-content: space-around;
+        }
+        
+        .abiens a{
+            text-decoration: none;
+            color: #000;
+            margin-left: 1em;
+        }
+        
+        a h1{
+          margin-top: -0.1em;  
+        }
+        
+        a h3{
+            color: #908D8D;
+            font-weight:100 ;
+            margin-top: -1em;
+            margin-bottom: 1em;
+        }
+        
+        .adescription1{
+            margin-left: -8rem;   
+        }
+        
+          @media screen and (max-width: 1279px) and (min-width: 1024px) {
+            .abody {
+              margin-left: 3em;
+            }
+        
+            #aslide-1 {
+              width: 55vw;
+              height: 75vh;
+            }
+        
+            #aslide-2, #aslide-3, #aslide-4, #aslide-5, #aslide-6{
+                margin-left: 0;
+            }
+        
+            .acontainer img {
+              width: 9vw;
+            }
+        
+            .aform-container{
+                position: relative;
+                right: 4.9rem;
+                bottom: 32.969rem;
+                padding: 1.25rem 1.25rem 28rem 1.25rem;
+            }
+        
+            .abiens{
+                margin-left: 2.5rem;
+            }
+        
+            .aslide-nav-for, .aslide-nav-back{
+                display: none;
+            }
+            
+            #aibiza, #abouskoura, #alos-angeles {
+              width: 18vw;
+              height: 25vh;
+            }
+        
+            .abtitle, .abtitle1{
+                font-size: 1rem;
+            }
+          }
+          
+          
+          
+          /* Mobile portrait : jusqu'à 767px */
+          @media screen and (max-width: 768px) {
+            .abody {
+              margin-left: 1em;
+            }
+        
+            #aslide-1 {
+              width: 85vw;
+              height: 80vh;
+            }
+        
+            .aslide-nav-back, .aslide-nav-for{
+                display: none;
+            }
+        
+            .acontainer {
+              display: block;
+            }
+        
+            .acontainer img {
+              width: 100%;
+              margin-bottom: 0.5rem;
+            }
+        
+            .abiens{
+                display: grid;
+            }
+        
+            #aibiza, #abouskoura, #alos-angeles {
+              width: 100%;
+              height: auto;
+              margin-left: 0;
+            }
+        
+            .aform-container{
+                display: none;
+            } 
+        
+            #aslide-2, #aslide-3, #aslide-4, #aslide-5, #aslide-6{
+                margin-left: 0;
+                width: 15vw;
+                height: 15vh;
+            }
+        
+            .aimg-container{
+                border:1px solid blue;
+                display: flex;
+                gap: 20px;
+                width: 85vw;
+            }
+        
+            .abtitle1, .aplus1{
+                margin-left: 7.875rem;
+            }
+        
+           .aenvoi {
+              flex-direction: column;
+              gap: 0.5em;
+            }
+          }
