@@ -6,22 +6,8 @@
     <title>Votre Commentaire</title>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/media_queries_comentaires.css">
-    <link rel="stylesheet" href="../../assets/css/queries.css">
-    <style>
-        
-        .alert {
-            display: none;
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px solid transparent;
-            border-radius: 4px;
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-        
-    </style>
-    <script src=""></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="o_body" style="overflow-x: hidden;">
 
@@ -66,63 +52,119 @@
         <!-- Form Container -->
         <div class="ocontainer" >
             <h2 class="o_h2"style="font-family: 'Bree Serif'; font-size: 20px; font-weight: bold;">Merci de compléter le formulaire.</h2>
-            <form >
+            <form id="feedbackForm">
                 <label for="name" id="label1">Full Name:</label>
-                <input type="text" id="name" placeholder="Entrer Votre Nom">
-
+                <input type="text" id="name" placeholder="Entrer Votre Nom" style="position: relative; bottom: 38px;">
+            
                 <label for="email" id="label1">Email :</label>
-                <input type="email" id="email" placeholder="Entrer Votre Email">
-
+                <input type="email" id="email" placeholder="Entrer Votre Email" style="position: relative; bottom: 38px;">
+            
                 <label for="image" id="label1">Insérer Image :</label>
-                <input type="file" id="image">
-
+                <input type="file" id="image" style="position: relative; bottom: 38px;">
+            
                 <label for="opinion" id="label1">Votre opinion :</label>
                 <textarea id="opinion" placeholder="Entrer Votre Opinion"></textarea>
-
+            
                 <button type="submit">Envoyer</button>
             </form>
             <div class="alert" id="alert"></div>
 
-<script>
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const opinion = document.getElementById("opinion").value.trim();
-        const alertDiv = document.getElementById("alert");
-        let alertMessage = "";
-
-        // Validation du nom complet (doit contenir au moins deux mots)
-        const nameRegex = /^[a-zA-Z]{2,}(?:\s[a-zA-Z]{2,})+$/;
-        if (!nameRegex.test(name)) {
-            alertMessage += "Le nom complet doit contenir au moins deux mots. <br>";
-        }
-
-        // Validation de l'email
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alertMessage += "Veuillez entrer un email valide. <br>";
-        }
-
-        // Validation de l'opinion (doit avoir au moins 10 caractères)
-        if (opinion.length < 10) {
-            alertMessage += "Votre opinion doit contenir au moins 10 caractères. <br>";
-        }
-
-        // Affichage des alertes si des erreurs existent
-        if (alertMessage) {
-            alertDiv.innerHTML = alertMessage;
-            alertDiv.style.display = "block";
-        } else {
-            alertDiv.style.display = "none";
-            alert("Formulaire soumis avec succès !");
-            // Ici, vous pouvez ajouter le code pour soumettre le formulaire
-        }
-    });
-</script>
+            <script>
+                document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Empêche l'envoi du formulaire
+            
+                    // Récupérer les valeurs des champs
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const image = document.getElementById('image').files[0]; // Obtenir le fichier d'image
+                    const opinion = document.getElementById('opinion').value.trim();
+            
+                    // Définir les regex
+                    const nameRegex = /^[a-zA-Z\s]{2,}$/; // Au moins 2 caractères alphabétiques
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Format d'email valide
+            
+                    // Validation des champs
+                    if (!nameRegex.test(name)) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Erreur',
+                            text: "Veuillez entrer un nom valide (au moins 2 caractères).",
+                        });
+                        return;
+                    }
+            
+                    if (!emailRegex.test(email)) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Erreur',
+                            text: "Veuillez entrer un email valide.",
+                        });
+                        return;
+                    }
+            
+                    if (!image) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Erreur',
+                            text: "Veuillez insérer une image.",
+                        });
+                        return;
+                    }
+            
+                    if (opinion.length < 10) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Erreur',
+                            text: "Votre opinion doit contenir au moins 10 caractères.",
+                        });
+                        return;
+                    }
+            
+                    // Si toutes les validations réussissent
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Merci !',
+                        text: "Vos informations ont été soumises avec succès.",
+                    });
+                });
+            </script>
+            
         </div>
     </div>
+   
 
+    <footer> 
+       
+        <div class="footer-container">
+            
+            <div class="footer-logo">
+                <!-- Logo dans le pied de page -->
+                <img src="../../assets/images/logo.png" alt="ImmoView Logo">
+                <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+                <br>
+                <div class="social-icons">
+                    <!-- Icônes de réseaux sociaux -->
+                    <a href="#"><img src="../../assets/images/Vector.png" alt="Instagram"></a>
+                    <a href="#"><img src="../../assets/images/Vector (1).png" alt="Twitter"></a>
+                    <a href="#"><img src="../../assets/images/Vector (2).png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Article</h3>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Catalogue</a></li>
+                    <li><a href="#">Détails</a></li>
+                    <li><a href="#">Témoignages</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                <p>(671) 555-0110</p>
+                <p>info@thauinter.com</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
