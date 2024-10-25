@@ -4,7 +4,7 @@ body {
 }
 
 .accuille-h {
-    background-color: #a01111;
+    background-color: #021B43;
     border: none;
     padding: 0 50px;
 }
@@ -1531,7 +1531,7 @@ nav {
 }
 
 
-.rectanglemain{
+/* .rectanglemain{
 
     position: relative;
     top: 9rem;
@@ -1542,9 +1542,9 @@ nav {
     background:#071526; 
     color: white;
     /* padding: 5%; */
-    text-align: center;
-    border-radius: 25px;
-}
+    /* text-align: center;
+    border-radius: 25px; */
+/* } */
 
 .findbuttons .Location{
     padding: 1rem 3rem;
@@ -1579,3 +1579,256 @@ nav {
     border-radius: 10px;
 
 }
+
+.search-container {
+    background-color: #071526;
+    padding: 46px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    gap: 51px;
+    max-width: 1055px;
+    margin: 220px auto;
+}
+
+.select-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.select-wrapper img {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+select {
+    width: 100%;
+    background-color: #022E62;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    appearance: none;
+    cursor: pointer;
+    height: 66px;
+
+}
+
+select:hover {
+    background-color: #16195c;
+}
+
+/* Style for the options */
+select option {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px;
+}
+
+.submit-button {
+    background-color: #022E62;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    height: 66px;
+
+}
+
+.submit-button:hover {
+    background-color: #16195c;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+    }
+    
+    .select-wrapper {
+        width: 100%;
+    }
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.type-button:first-child {
+    background-color: white;
+    color: #001233;
+}
+
+.type-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.type-button:first-child:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.type-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.villas-casa-sale{
+
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: repeat(4 , auto);
+    margin: 45px 150px ;
+    padding-left: 20px;
+    padding-right: 0px; 
+    
+    position:relative;
+    /* height: 428px;
+    width: 342px; */
+    gap: 50px;
+}
+
+.villas-casa-sale img{
+    height: 428px;
+    width: 342px;
+
+}
+
+
+.villas-title{
+    color:white; 
+    text-align: center;
+    margin-top: 7%;
+}
+
+
+.villas-rabat-sale{
+
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: repeat(4 , auto);
+    margin: 45px 150px ;
+    padding-left: 20px;
+    padding-right: 0px; 
+    
+    position:relative;
+    /* height: 428px;
+    width: 342px; */
+    gap: 50px;
+}
+
+.villas-rabat-sale img{
+    height: 428px;
+    width: 342px;
+
+}
+
+
+
+.download{
+    color: white;
+    text-align: center;
+    font-style:normal;
+    /* font-size: ; */
+    
+}
+
+
+.search-container {
+    background-color: #071526;
+    padding: 46px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    gap: 51px;
+    max-width: 1055px;
+    margin: 220px auto;
+}
+
+
+
+
+
+
+
+
+
+/* .villas-title h1{
+    
+    color: white;
+    text-align: center;
+} */
+
+/* .villas-for-sale h1{
+    grid-column: 1 / 4 ;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* .villas-for-sale{
+
+    display: flex;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: repeat(4 , auto);
+    margin: 45px 150px ;
+    padding-left: 20px;
+    padding-right: 0px; 
+    
+    position:relative;
+    height: 428px;
+    width: 342px;
+    gap: 50px;
+}
+
+.villas title h1{
+    display: flex;
+    position: relative;
+    align-items:center;
+    justify-items: center;
+}
+
+
+
+ .villas-for-sale img{
+    height: 428px;
+    width: 342px;
+
+}  */
