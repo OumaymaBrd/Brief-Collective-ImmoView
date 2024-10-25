@@ -6,6 +6,7 @@
     <title>ImmoView</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doppio+One&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <header class="accuille-h">
@@ -33,7 +34,7 @@
                 <br>
                 <div class="immo-buttons">
                     <a href="#paragraph-mission" class="first-btn">See more</a>
-                    <a href="catalogue.html" class="seconde-btn">Catalogue</a>
+                    <a href="views/Page_html/catalogue.html" class="seconde-btn">Catalogue</a>
                 </div>
             </div>
             <div class="accuille-image"> 
@@ -133,9 +134,9 @@
             <h3>Article</h3>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="../Page_html/catalogue.html">Catalogue</a></li>
-                <li><a href="../Page_html/detail.html">Détails</a></li>
-                <li><a href="../Page_html/Temoignage.html">Témoignages</a></li>
+                <li><a href="views/Page_html/catalogue.html">Catalogue</a></li>
+                <li><a href="views/Page_html/detail.html">Détails</a></li>
+                <li><a href="views/Page_html/Temoignage.html">Témoignages</a></li>
             </ul>
         </div>
         <div class="footer-contact">
@@ -146,6 +147,17 @@
         </div>
     </div>
 </footer>
-<script src="assets/js/action.js"></script>
+
+<!-- remplacer js dans le code  -->
+ <script>
+    const burgerMenu = document.getElementById('burger-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    burgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    });
+ </script>
+
+
 </body>
 </html> 
