@@ -3079,6 +3079,10 @@
     margin: -0.625em -0.625em -0.625em -0.625em;
 }
 
+.atitre{
+    margin-top: 2em;
+}
+
 .atitle{
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -3183,19 +3187,27 @@ input{
 }
 
 #aibiza{
-    width:5vw;
+    width:20vw;
+    height: 27vh;
+    border-radius: 5px;
+    margin-left: -8rem;
 }
 
 #abouskoura{
-    width:5vw;
+    width:20vw;
+    height: 27vh;
+    border-radius: 5px;
 }
 
 #alos-angeles{
-    width:5vw;
+    width:20vw;
+    height: 27vh;
+    border-radius: 5px;
 }
 
 .abiens{
     display:flex;
+    justify-content: space-around;
 }
 
 .abiens a{
@@ -3215,12 +3227,13 @@ a h3{
     margin-bottom: 1em;
 }
 
-.adescription{
+.adescription1{
+    margin-left: -8rem;
     
 }
 
-/* code à enlever */
+/* code à enlever
 hr{
     border:0.625rem solid black;
-}
+} */
 
