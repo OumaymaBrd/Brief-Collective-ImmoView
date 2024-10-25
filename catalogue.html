@@ -10,13 +10,18 @@
     <header class="accuille-h">
         <nav>
             <div class="logo">
-                <img src="./images/logo.png" alt="ImmoView Logo">
+                <img src="./assets/images/logo.png" alt="ImmoView Logo">
             </div>
-            <ul class="nav-links">
+            <div class="burger-menu" id="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">Catalogue</a></li>
-                <li><a href="#">Détails</a></li>
-                <li><a href="#">Témoignages</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="detail.html">Détails</a></li>
+                <li><a href="Temoignage.html">Témoignages</a></li>
             </ul>
         </nav>
         <section class="interface">
@@ -31,28 +36,208 @@
 
                 <div class="partnership">
                     <p>Our Partnership </p>
-                    <img src="./images/partnership.png" alt="">
+                    <img src="./assets/images/partnership.png" alt="">
                 </div>
             </div>
             
         </section>
-        <div class="rectanglemain">
-            <!-- <select name="Location">
-                <option>Weekdays</option>
-            </select> 
-           <select name="Type">
-                <option>Event Type</option>
-            </select>
-        <select name="Price Range">
-                <option>Any Category</option>
-            </select> 
-        <select name="Submit">
-                <option>Any Category</option>
-            </select>  -->
+        <!-- <div class="rectanglemain">
+     
+    </div> -->
+    
+        
+
+        <!-- <select id="cities" name="cities">
+            <option value="" disabled selected>Location</option> 
+            <option value="Casablanca">Casablanca</option>
+            <option value="Rabat">Rabat</option>
+        </select>
+
+        <select id="type" name="type">
+            <option value="" disabled selected>Type</option> 
+            <option value="Villas">Villas</option>
+            <option value="Mansions">Mansions</option>
+        </select> -->
+
+        <div class="background-container">
+            <div class="search-container">
+                <div class="select-wrapper">
+                    <select>
+                        <option value="" disabled selected>Location</option>
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                    </select>
+                    <img src="./assets/images/icon_map.png" alt="Location icon">
+                </div>
+                
+                <div class="select-wrapper">
+                    <select>
+                        <option value="" disabled selected>Type</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="condo">Condo</option>
+                    </select>
+                    <img src="./assets/images/icon_home.png" alt="Home icon">
+                </div>
+                
+                <div class="select-wrapper">
+                    <select>
+                        <option value="" disabled selected>Price Range</option>
+                        <option value="0-100000">$0 - $100,000</option>
+                        <option value="100000-300000">$100,000 - $300,000</option>
+                        <option value="300000-plus">$300,000+</option>
+                    </select>
+                    <img src="./assets/images/icon_coin.png" alt="Dollar icon">
+                </div>
+                
+                <button class="submit-button">Submit</button>
+            </div>
+        </div>
+       
+
+
+        <!-- <div class="Typev2">
+            <button>
+            <img src="./images/icon_home.png" alt="Dollar icon">
+            House
+            </button>
+        </div> -->
+
+        <div class="button-container">
+            <button class="type-button">
+                <img src="./assets/images/villa.png" alt="House">
+                Villa
+            </button>
+            <button class="type-button">
+                <img src="./assets/images/home-white.png" alt="Villa">
+                House
+            </button>
+            <button class="type-button">
+                <img src="./assets/images/appartment.png" alt="Apartment">
+                Apartment
+            </button>
+        </div>
+
+        
+        <div class="villas-title" >
+            <h1>Explore Villas in CASABLANCA</h1>
+
+              
+        </div>
+        <div class="villas-casa-sale">
+          
+            <img src="./assets/images/villa1.png" alt="">
+            <img src="./assets/images/villa2.png" alt="">
+            <img src="./assets/images/villa3.png" alt="">
+        </div>
+
+
+        <div class="villas-title" >
+            <h1>Explore Villas in Rabat</h1>
+
+              
+        </div>
+        <div class="villas-rabat-sale">
+          
+            <img src="./assets/images/villa1.png" alt="">
+            <img src="./assets/images/villa2.png" alt="">
+            <img src="./assets/images/villa3.png" alt="">
+        </div>
+
+    <div class="download">
+        <h1>Download for iOS/Android</h1>
+    </div>
+
+
+    <div class="download-section">
+        <div class="store">
 
         </div>
-       <div class="findbuttons">
-        <button class="Location">Location</button>
-       </div>
+               <div class="button-container">
+            <div class="store-buttons">
+                <a href="#" class="store-button">
+                <img src="./assets/images/google-play-badge 1.png" alt="Get it on Google Play" class="store-badge">
+            </a>
+            <a href="#" class="store-button">
+                <img src="./assets/images/app-store.png" alt="Download on the App Store" class="store-badge">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="./assets/images/logo.png" alt="ImmoView Logo">
+            <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+            <br>
+            <div class="social-icons">
+                <a href="#"><img src="./assets/images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./assets/images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./assets/images/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h3>Article</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="detail.html">Détails</a></li>
+                <li><a href="Temoignage.html">Témoignages</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+            <p>(671) 555-0110</p>
+            <p>info@thauinter.com</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../Brief-Collective-ImmoView/assets/js/action.js">
+
+</script>       
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="custom-select">
+            <div class="select-box">
+              <img src="./images/icon_home.png" alt="Icon" class="icon">
+              <span class="selected">Price Range</span>
+              <div class="options-container">
+                <div class="option" data-value="500K$ to 1M$">500K$ to 1M$</div>
+                <div class="option" data-value="1M$ to 2M$">1M$ to 2M$</div>
+                <div class="option" data-value="2M$ to 3M$">2M$ to 3M$</div>    
+              </div>
+            </div>
+            <input type="hidden" name="price-range" id="price-range">
+          </div>
+        <button class="submit-button">Submit</button>
+    </div> -->

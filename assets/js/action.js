@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-    const burgerMenu = document.getElementById('burger-menu');
-    const navLinks = document.getElementById('nav-links');
-
-    burgerMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active'); // Toggle the 'active' class
-    });
-=======
 
         // Récupérer le bouton et le conteneur
         const button = document.getElementById('Historique1');
@@ -39,4 +31,6 @@
         document.querySelector('.share-btn').addEventListener('click', function() {
             window.location.href = 'Commentaire.html';
         });
->>>>>>> c9b7fd582712e8a539a2e37282680118702be506
+
+    
+
